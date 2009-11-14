@@ -1,0 +1,5633 @@
+---
+propel:
+  _attributes: { noXsd: false, defaultIdMethod: none, package: lib.model }
+  clientes:
+    co_cli:
+      _attributes: { phpName: Cedula }
+      type: CHAR
+      size: 10
+      required: true
+      primaryKey: true
+    tipo:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: tipo_cli
+      foreignReference: tip_cli
+      onDelete:
+      onUpdate:
+    cli_des:
+      _attributes: { phpName: Nombre }
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    direc1:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    direc2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    telefonos:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    fax:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    inactivo:
+      type: BOOLEAN
+      required: true
+      default: 0
+    comentario:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    respons:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    fecha_reg:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    puntaje:
+      type: INTEGER
+      required: true
+      default: 0
+    saldo:
+      type: FLOAT
+      size: 8
+      required: true
+      default: 0
+    saldo_ini:
+      type: FLOAT
+      size: 8
+      required: true
+      default: 0
+    fac_ult_ve:
+      type: INTEGER
+      required: true
+      default: 0
+    fec_ult_ve:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    net_ult_ve:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    mont_cre:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    plaz_pag:
+      type: INTEGER
+      required: true
+      default: 0
+    desc_ppago:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    co_zon:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: zona
+      foreignReference: co_zon
+      onDelete:
+      onUpdate:
+    co_seg:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: segmento
+      foreignReference: co_seg
+      onDelete:
+      onUpdate:
+    co_ven:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: vendedor
+      foreignReference: co_ven
+      onDelete:
+      onUpdate:
+    desc_glob:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    horar_caja:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    frecu_vist:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    lunes:
+      type: BOOLEAN
+      required: true
+      default: 0
+    martes:
+      type: BOOLEAN
+      required: true
+      default: 0
+    miercoles:
+      type: BOOLEAN
+      required: true
+      default: 0
+    jueves:
+      type: BOOLEAN
+      required: true
+      default: 0
+    viernes:
+      type: BOOLEAN
+      required: true
+      default: 0
+    sabado:
+      type: BOOLEAN
+      required: true
+      default: 0
+    domingo:
+      type: BOOLEAN
+      required: true
+      default: 0
+    dir_ent2:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    tipo_iva:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    iva:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    rif:
+      type: CHAR
+      size: 18
+      required: true
+      default: " "
+    contribu:
+      type: BOOLEAN
+      required: true
+      default: 0
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    nit:
+      type: CHAR
+      size: 18
+      required: true
+      default: " "
+    email:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_ingr:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: cta_ingr
+      foreignReference: co_ingr
+      onDelete:
+      onUpdate:
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo5:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo6:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo7:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo8:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    juridico:
+      type: BOOLEAN
+      required: true
+      default: 0
+    tipo_adi:
+      type: NUMERIC
+      size: 3
+      required: true
+      default: 1
+    matriz:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    co_tab:
+      type: INTEGER
+      required: true
+      default: 0
+    tipo_per:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    serialp:
+      type: CHAR
+      size: 30
+      required: true
+      default: " "
+    valido:
+      type: BOOLEAN
+      required: true
+      default: 0
+    row_id:
+      type: BINARY
+      required: true
+    estado:
+      type: CHAR
+      size: 1
+      required: true
+      default: ('A')
+    Id:
+      type: INTEGER
+      required: true
+      default: -1
+    co_pais:
+      type: VARCHAR
+      size: 6
+      required: true
+      default: " "
+    ciudad:
+      type: VARCHAR
+      size: 50
+      required: true
+      default: " "
+    zip:
+      type: VARCHAR
+      size: 10
+      required: true
+      default: " "
+    login:
+      type: VARCHAR
+      size: 10
+      required: true
+      default: " "
+    password:
+      type: VARCHAR
+      size: 50
+      required: true
+      default: " "
+    website:
+      type: VARCHAR
+      size: 200
+      required: true
+      default: " "
+    salestax:
+      type: CHAR
+      size: 8
+      required: true
+      default: " "
+    contribu_e:
+      type: BOOLEAN
+      required: true
+      default: 0
+    porc_esp:
+      type: FLOAT
+      size: 8
+      required: true
+      default: 0
+    _indexes:
+      clientes_co_cli:
+        - co_cli
+      index_1891537822:
+        - rowguid
+      icli_des:
+        - cli_des
+      ico_seg:
+        - co_seg
+      ico_ven:
+        - co_ven
+      ico_zon:
+        - co_zon
+      itipo:
+        - tipo
+      IX_clientes:
+        - login
+  factura:
+    fact_num:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    contrib:
+      type: BOOLEAN
+      required: true
+      default: 0
+    nombre:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    rif:
+      type: CHAR
+      size: 18
+      required: true
+      default: " "
+    nit:
+      type: CHAR
+      size: 18
+      required: true
+      default: " "
+    num_control:
+      type: INTEGER
+      required: true
+      default: 0
+    status:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    comentario:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    descrip:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    saldo:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    fec_emis:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    fec_venc:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    co_cli:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+      foreignTable: clientes
+      foreignReference: co_cli
+      onDelete:
+      onUpdate:
+    co_ven:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: vendedor
+      foreignReference: co_ven
+      onDelete:
+      onUpdate:
+    co_tran:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: transpor
+      foreignReference: co_tran
+      onDelete:
+      onUpdate:
+    dir_ent:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    forma_pag:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: condicio
+      foreignReference: co_cond
+      onDelete:
+      onUpdate:
+    tot_bruto:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    tot_neto:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    glob_desc:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    tot_reca:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    porc_gdesc:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    porc_reca:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    total_uc:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    total_cp:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    tot_flete:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    monto_dev:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    totklu:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    anulada:
+      type: BOOLEAN
+      required: true
+      default: 0
+    impresa:
+      type: BOOLEAN
+      required: true
+      default: 0
+    iva:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    iva_dev:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+#    feccom:
+#      type: VARCHAR
+      #required: true
+      #default: ('01/01/1900')
+    numcom:
+      type: INTEGER
+      required: true
+      default: 0
+    tasa:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    vuelto:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    seriales:
+      type: INTEGER
+      required: true
+      default: 0
+    tasag:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    tasag10:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    tasag20:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    ID:
+      type: INTEGER
+      required: true
+      default: -1
+    _indexes:
+      factura_fac_num:
+        - fact_num
+      index_1456060273:
+        - rowguid
+      factura_num_turno:
+        - num_turno
+      ico_cli:
+        - co_cli
+      ico_tran:
+        - co_tran
+      ico_ven:
+        - co_ven
+      ifec_emis:
+        - fec_emis
+      ifeccom_numcom:
+        - feccom
+        - numcom
+      iforma_pag:
+        - forma_pag
+      imoneda:
+        - moneda
+      istatus:
+        - status
+      IX_factura:
+        - ID
+      IX_factura_1:
+        - fe_us_mo
+  art:
+    co_art:
+      type: CHAR
+      size: 30
+      required: true
+      primaryKey: true
+    art_des:
+      type: VARCHAR
+      size: 120
+      required: true
+      default: " "
+    fecha_reg:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    manj_ser:
+      type: BOOLEAN
+      required: true
+      default: 0
+    co_lin:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: lin_art
+      foreignReference: co_lin
+      onDelete:
+      onUpdate:
+    co_cat:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: cat_art
+      foreignReference: co_cat
+      onDelete:
+      onUpdate:
+    co_subl:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: sub_lin
+      foreignReference: co_lin
+      onDelete:
+      onUpdate:
+    co_color:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: colores
+      foreignReference: co_col
+      onDelete:
+      onUpdate:
+    item:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    ref:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    modelo:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    procedenci:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: proceden
+      foreignReference: cod_proc
+      onDelete:
+      onUpdate:
+    comentario:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    co_prov:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+      foreignTable: prov
+      foreignReference: co_prov
+      onDelete:
+      onUpdate:
+    ubicacion:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    uni_venta:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: unidades
+      foreignReference: co_uni
+      onDelete:
+      onUpdate:
+    uni_compra:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    uni_relac:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    relac_aut:
+      type: INTEGER
+      required: true
+      default: 0
+    stock_act:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    stock_com:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    sstock_com:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    stock_lle:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    sstock_lle:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    stock_des:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    sstock_des:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    suni_venta:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: unidades
+      foreignReference: co_uni
+      onDelete:
+      onUpdate:
+    suni_compr:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    suni_relac:
+      type: DECIMAL
+      size: 20
+      scale: 3
+      required: true
+      default: 0
+    sstock_act:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    relac_comp:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    relac_vent:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    pto_pedido:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    stock_max:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    stock_min:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    prec_om:
+      type: BOOLEAN
+      required: true
+      default: 0
+    prec_vta1:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_prec_v:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    fec_prec_2:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    prec_vta2:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_prec_3:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    prec_vta3:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_prec_4:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    prec_vta4:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_prec_5:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    prec_vta5:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    prec_agr1:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    prec_agr2:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    prec_agr3:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    prec_agr4:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    prec_agr5:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    can_agr:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_des_p5:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    fec_has_p5:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    co_imp:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    margen_max:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    ult_cos_un:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_ult_co:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    cos_pro_un:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_cos_pr:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    cos_merc:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_cos_me:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    cos_prov:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_cos_p2:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    ult_cos_do:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_cos_do:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    cos_un_an:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_cos_an:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    ult_cos_om:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_ult_om:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    cos_pro_om:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    fec_pro_om:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    tipo_cos:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    mont_comi:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    porc_cos:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    mont_cos:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    porc_gas:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    mont_gas:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    f_cost:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    fisico:
+      type: BOOLEAN
+      required: true
+      default: 0
+    punt_cli:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    punt_pro:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    dias_repos:
+      type: INTEGER
+      required: true
+      default: 0
+    tipo:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    alm_prin:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    anulado:
+      type: BOOLEAN
+      required: true
+      default: 0
+    tipo_imp:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+      foreignTable: tabulado
+      foreignReference: tipo
+      onDelete:
+      onUpdate:
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    mon_ilc:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    capacidad:
+      type: DECIMAL
+      size: 20
+      scale: 3
+      required: true
+      default: 0
+    grado_al:
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0
+    tipo_licor:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    compuesto:
+      type: BOOLEAN
+      required: true
+      default: 0
+    picture:
+      type: LONGVARBINARY
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo5:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo6:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo7:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo8:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    tuni_venta:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    equi_uni1:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    equi_uni2:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    equi_uni3:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    lote:
+      type: BOOLEAN
+      required: true
+      default: 0
+    serialp:
+      type: CHAR
+      size: 30
+      required: true
+      default: " "
+    valido:
+      type: BOOLEAN
+      required: true
+      default: 0
+    atributo1:
+      type: BOOLEAN
+      required: true
+      default: 0
+    vatributo1:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    atributo2:
+      type: BOOLEAN
+      required: true
+      default: 0
+    vatributo2:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    atributo3:
+      type: BOOLEAN
+      required: true
+      default: 0
+    vatributo3:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    atributo4:
+      type: BOOLEAN
+      required: true
+      default: 0
+    vatributo4:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    atributo5:
+      type: BOOLEAN
+      required: true
+      default: 0
+    vatributo5:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    atributo6:
+      type: BOOLEAN
+      required: true
+      default: 0
+    vatributo6:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    garantia:
+      type: CHAR
+      size: 30
+      required: true
+      default: " "
+    peso:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    pie:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    margen1:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    margen2:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    margen3:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    margen4:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    margen5:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    row_id:
+      type: BINARY
+      required: true
+    imagen1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    imagen2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    i_art_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    uni_emp:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rel_emp:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    movil:
+      type: BOOLEAN
+      required: true
+      default: 0
+    _indexes:
+      art_co_art:
+        - co_art
+      index_16055143:
+        - rowguid
+      iart_des:
+        - art_des
+      ico_cat:
+        - co_cat
+      ico_color:
+        - co_color
+      ico_lin:
+        - co_lin
+      ico_prov:
+        - co_prov
+      ico_subl:
+        - co_subl
+        - co_lin
+      iprocedenc:
+        - procedenci
+      isuni_vent:
+        - suni_venta
+      itipo_imp:
+        - tipo_imp
+      iuni_venta:
+        - uni_venta
+      modelo:
+        - modelo
+      ref:
+        - ref
+  reng_fac:
+    fact_num:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    reng_num:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    tipo_doc:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    reng_doc:
+      type: INTEGER
+      required: true
+      default: 0
+    num_doc:
+      type: INTEGER
+      required: true
+      default: 0
+    co_art:
+      type: CHAR
+      size: 30
+      required: true
+      default: " "
+      foreignTable: art
+      foreignReference: co_art
+      onDelete:
+      onUpdate:
+    co_alma:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: sub_alma
+      foreignReference: co_sub
+      onDelete:
+      onUpdate:
+    total_art:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    stotal_art:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    pendiente:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    uni_venta:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    prec_vta:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    porc_desc:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    tipo_imp:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+      foreignTable: tabulado
+      foreignReference: tipo
+      onDelete:
+      onUpdate:
+    isv:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    reng_neto:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    cos_pro_un:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    ult_cos_un:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    ult_cos_om:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    cos_pro_om:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    total_dev:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    monto_dev:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    prec_vta2:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    anulado:
+      type: BOOLEAN
+      required: true
+      default: 0
+    des_art:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    seleccion:
+      type: BOOLEAN
+      required: true
+      default: 0
+    cant_imp:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    comentario:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    total_uni:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    mon_ilc:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    otros:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    nro_lote:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    fec_lote:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    pendiente2:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    tipo_doc2:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    reng_doc2:
+      type: INTEGER
+      required: true
+      default: 0
+    num_doc2:
+      type: INTEGER
+      required: true
+      default: 0
+    tipo_prec:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_alma2:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    aux01:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    aux02:
+      type: VARCHAR
+      size: 30
+      required: true
+      default: " "
+    cant_prod:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    imp_prod:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    _indexes:
+      index_647009386:
+        - rowguid
+      reng_fac_reng_fac:
+        - fact_num
+        - reng_num
+      fact_num:
+        - fact_num
+      ico_alma:
+        - co_alma
+      ico_art:
+        - co_art
+      reng_num:
+        - reng_num
+  docum_cc:
+    tipo_doc:
+      type: CHAR
+      size: 4
+      required: true
+      primaryKey: true
+    nro_doc:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    anulado:
+      type: BOOLEAN
+      required: true
+      default: 0
+    movi:
+      type: INTEGER
+      required: true
+      default: 0
+    aut:
+      type: BOOLEAN
+      required: true
+      default: 0
+    num_control:
+      type: INTEGER
+      required: true
+      default: 0
+    co_cli:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+      foreignTable: clientes
+      foreignReference: co_cli
+      onDelete:
+      onUpdate:
+    contrib:
+      type: BOOLEAN
+      required: true
+      default: 0
+    fec_emis:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    fec_venc:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    observa:
+      type: VARCHAR
+      size: 120
+      required: true
+      default: " "
+    doc_orig:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    nro_orig:
+      type: INTEGER
+      required: true
+      default: 0
+    co_ban:
+      type: CHAR
+      size: 6
+      required: true
+      default: ('0')
+    nro_che:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    co_ven:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: vendedor
+      foreignReference: co_ven
+      onDelete:
+      onUpdate:
+    tipo:
+      type: CHAR
+      size: 1
+      required: true
+      default: ('1')
+      foreignTable: tabulado
+      foreignReference: tipo
+      onDelete:
+      onUpdate:
+    tasa:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    moneda:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: moneda
+      foreignReference: co_mone
+      onDelete:
+      onUpdate:
+    monto_imp:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    monto_gen:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    monto_a1:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    monto_a2:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    monto_bru:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    descuentos:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    monto_des:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    recargo:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    monto_rec:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    monto_otr:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    monto_net:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    saldo:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    feccom:
+      type: VARCHAR
+      required: true
+      #default: ('01/01/1900')
+    numcom:
+      type: INTEGER
+      required: true
+      default: 0
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    comis1:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comis2:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comis3:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comis4:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    adicional:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo5:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo6:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo7:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo8:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    numcon:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: almacen
+      foreignReference: co_alma
+      onDelete:
+      onUpdate:
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    mon_ilc:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    otros1:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    otros2:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    otros3:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    reng_si:
+      type: BOOLEAN
+      required: true
+      default: 0
+    comis5:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comis6:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    row_id:
+      type: BINARY
+      required: true
+    aux01:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    aux02:
+      type: VARCHAR
+      size: 30
+      required: true
+      default: " "
+    salestax:
+      type: CHAR
+      size: 8
+      required: true
+      default: " "
+    origen:
+      type: CHAR
+      size: 1
+      default: " "
+    origen_d:
+      type: CHAR
+      size: 20
+      default: " "
+    fec_reg:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),'01/01/1900',104))
+    _indexes:
+      docum_cc_docc_nro:
+        - tipo_doc
+        - nro_doc
+      index_1107535029:
+        - rowguid
+      ico_ban:
+        - co_ban
+      ico_cli:
+        - co_cli
+      ico_ven:
+        - co_ven
+      idocc_nro:
+        - tipo_doc
+      idocc_nro2:
+        - nro_doc
+      ifec_emis:
+        - fec_emis
+      ifeccom_numcom:
+        - feccom
+        - numcom
+      imoneda:
+        - moneda
+      isaldo:
+        - saldo
+  reng_cob:
+    cob_num:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    reng_num:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    tp_doc_cob:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    doc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    neto:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    neto_tmp:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    dppago:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    dppago_tmp:
+      type: INTEGER
+      required: true
+      default: 0
+    reng_ncr:
+      type: INTEGER
+      required: true
+      default: 0
+    co_ven:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    comis1:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comis2:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comis3:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comis4:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    sign_aju_c:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    porc_aju_c:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    por_cob:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comi_cob:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    mont_cob:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    sino_pago:
+      type: BOOLEAN
+      required: true
+      default: 0
+    sino_reten:
+      type: BOOLEAN
+      required: true
+      default: 0
+    monto_dppago:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    monto_reten:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    imp_pago:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    monto_obj:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    isv:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    nro_fact:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    moneda:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    tasa:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    numcon:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    sustraen:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    co_islr:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    fec_emis:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    fec_venc:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    comis5:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comis6:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    fact_iva:
+      type: INTEGER
+      required: true
+      default: 0
+    ret_iva:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    porc_retn:
+      type: DECIMAL
+      size: 20
+      scale: 8
+      required: true
+      default: 0
+    porc_desc:
+      type: DECIMAL
+      size: 20
+      scale: 8
+      required: true
+      default: 0
+    aux01:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    aux02:
+      type: VARCHAR
+      size: 30
+      required: true
+      default: " "
+    _indexes:
+      index_1788585460:
+        - rowguid
+      reng_cob_reng_cob:
+        - reng_num
+        - cob_num
+      cobnum:
+        - cob_num
+      doc_num:
+        - doc_num
+      itp_doc_co:
+        - tp_doc_cob
+      rengnum:
+        - reng_num
+  cobros:
+    cob_num:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    recibo:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    co_cli:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+      foreignTable: clientes
+      foreignReference: co_cli
+      onDelete:
+      onUpdate:
+    co_ven:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: vendedor
+      foreignReference: co_ven
+      onDelete:
+      onUpdate:
+    fec_cob:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    anulado:
+      type: BOOLEAN
+      required: true
+      default: 0
+    monto:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    dppago:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    mont_ncr:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    ncr:
+      type: INTEGER
+      required: true
+      default: 0
+    tcomi_porc:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    tcomi_line:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    tcomi_art:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    tcomi_conc:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    feccom:
+      type: VARCHAR
+      required: true
+      #default: ('01/01/1900')
+    tasa:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 1
+    moneda:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: moneda
+      foreignReference: co_mone
+      onDelete:
+      onUpdate:
+    numcom:
+      type: INTEGER
+      required: true
+      default: 0
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo5:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo6:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo7:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo8:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    recargo:
+      type: BOOLEAN
+      required: true
+      default: 0
+    adel_num:
+      type: INTEGER
+      required: true
+      default: 0
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: almacen
+      foreignReference: co_alma
+      onDelete:
+      onUpdate:
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    descrip:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    num_dev:
+      type: INTEGER
+      required: true
+      default: 0
+    devdinero:
+      type: BOOLEAN
+      required: true
+      default: 0
+    num_turno:
+      type: INTEGER
+      required: true
+      default: 0
+    aux01:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    aux02:
+      type: VARCHAR
+      size: 30
+      required: true
+      default: " "
+    origen:
+      type: CHAR
+      size: 1
+      default: " "
+    origen_d:
+      type: CHAR
+      size: 20
+      default: " "
+    _indexes:
+      cobros_cob_num:
+        - cob_num
+      index_464056739:
+        - rowguid
+      ico_cli:
+        - co_cli
+      ico_ven:
+        - co_ven
+      ifec_cob:
+        - fec_cob
+      ifeccom_numcom:
+        - feccom
+        - numcom
+      imoneda:
+        - moneda
+      IX_cobros:
+        - num_turno
+  reng_tip:
+    cob_num:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    reng_num:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    tip_cob:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    movi:
+      type: INTEGER
+      required: true
+      default: 0
+    num_doc:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    mont_doc:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    mont_tmp:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    moneda:
+      type: CHAR
+      size: 8
+      required: true
+      default: " "
+    banco:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    cod_caja:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    des_caja:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    fec_cheq:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    nombre_ban:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    numero:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    devuelto:
+      type: BOOLEAN
+      required: true
+      default: 0
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    operador:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    clave:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    _indexes:
+      index_1338487847:
+        - rowguid
+      reng_tip_reng_tip:
+        - reng_num
+        - cob_num
+      cobnum:
+        - cob_num
+      IX_reng_tip:
+        - movi
+      reng_num:
+        - reng_num
+  tipo_cli:
+    tip_cli:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    des_tipo:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    precio_a:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    row_id:
+      type: BINARY
+      required: true
+    _indexes:
+      index_1212583408:
+        - rowguid
+      tipo_cli_tip_cli:
+        - tip_cli
+      ides_tipo:
+        - des_tipo
+  zona:
+    co_zon:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    zon_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    _indexes:
+      index_1708585175:
+        - rowguid
+      zona_co_zon:
+        - co_zon
+      izon_des:
+        - zon_des
+  segmento:
+    co_seg:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    seg_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    c_cuenta:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    p_cuenta:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    _indexes:
+      index_796581926:
+        - rowguid
+      segmento_co_seg:
+        - co_seg
+      iseg_des:
+        - seg_des
+  vendedor:
+    co_ven:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    tipo:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    ven_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    cedula:
+      type: CHAR
+      size: 16
+      required: true
+      default: " "
+    direc1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    direc2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    telefonos:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    fecha_reg:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    condic:
+      type: BOOLEAN
+      required: true
+      default: 0
+    comision:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    fun_cob:
+      type: BOOLEAN
+      required: true
+      default: 0
+    fun_ven:
+      type: BOOLEAN
+      required: true
+      default: 0
+    comisionv:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    fac_ult_ve:
+      type: INTEGER
+      required: true
+      default: 0
+    fec_ult_ve:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    net_ult_ve:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    cli_ult_ve:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    cta_contab:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo5:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo6:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo7:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo8:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    login:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    password:
+      type: CHAR
+      size: 50
+      required: true
+      default: " "
+    email:
+      type: CHAR
+      size: 40
+      required: true
+      default: " "
+    PSW_M:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    _indexes:
+      index_1628584890:
+        - rowguid
+      vendedor_co_ven:
+        - co_ven
+      iven_des:
+        - ven_des
+  cta_ingr:
+    co_ingr:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    descrip:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    cta_contab:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    co_islr:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    _indexes:
+      cta_ingr_co_ingr:
+        - co_ingr
+      index_1024058734:
+        - rowguid
+      CO_ISLR:
+        - co_islr
+      idescrip:
+        - descrip
+  transpor:
+    co_tran:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    des_tran:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    resp_tra:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    _indexes:
+      index_1388584035:
+        - rowguid
+      transpor_co_tran:
+        - co_tran
+      ides_tran:
+        - des_tran
+  condicio:
+    co_cond:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    cond_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    dias_cred:
+      type: INTEGER
+      required: true
+      default: 0
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    row_id:
+      type: BINARY
+      required: true
+    _indexes:
+      condicio_co_cond:
+        - co_cond
+      index_752057765:
+        - rowguid
+      icond_des:
+        - cond_des
+  moneda:
+    co_mone:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    mone_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    cambio:
+      type: DECIMAL
+      size: 20
+      scale: 5
+      required: true
+      default: 0
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    _indexes:
+      index_1904061869:
+        - rowguid
+      moneda_co_mone:
+        - co_mone
+      imone_des:
+        - mone_des
+  almacen:
+    co_alma:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    alma_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    nro_fact:
+      type: INTEGER
+      required: true
+      default: 0
+    num_fac_ini:
+      type: INTEGER
+      required: true
+      default: 0
+    num_fac_fin:
+      type: INTEGER
+      required: true
+      default: 0
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    nc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ajus_num:
+      type: INTEGER
+      required: true
+      default: 0
+    tras_num:
+      type: INTEGER
+      required: true
+      default: 0
+    fisi_num:
+      type: INTEGER
+      required: true
+      default: 0
+    num_kit:
+      type: INTEGER
+      required: true
+      default: 0
+    genk_num:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ped_num:
+      type: INTEGER
+      required: true
+      default: 0
+    cotc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    devc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ndd_num:
+      type: INTEGER
+      required: true
+      default: 0
+    post_num:
+      type: INTEGER
+      required: true
+      default: 0
+    cfxg_num:
+      type: INTEGER
+      required: true
+      default: 0
+    chdv_num:
+      type: INTEGER
+      required: true
+      default: 0
+    giro_num:
+      type: INTEGER
+      required: true
+      default: 0
+    reten_num:
+      type: INTEGER
+      required: true
+      default: 0
+    cb_num:
+      type: INTEGER
+      required: true
+      default: 0
+    movb_num:
+      type: INTEGER
+      required: true
+      default: 0
+    movc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ordp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    depc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    comp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ord_num:
+      type: INTEGER
+      required: true
+      default: 0
+    cotp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    devp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ndr_num:
+      type: INTEGER
+      required: true
+      default: 0
+    postcppnum:
+      type: INTEGER
+      required: true
+      default: 0
+    ccxg_num:
+      type: INTEGER
+      required: true
+      default: 0
+    chdvcppnum:
+      type: INTEGER
+      required: true
+      default: 0
+    girocppnum:
+      type: INTEGER
+      required: true
+      default: 0
+    nccpp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ndcpp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    retencppnum:
+      type: INTEGER
+      required: true
+      default: 0
+    pg_num:
+      type: INTEGER
+      required: true
+      default: 0
+    aju_posm:
+      type: INTEGER
+      required: true
+      default: 0
+    aju_posa:
+      type: INTEGER
+      required: true
+      default: 0
+    aju_negm:
+      type: INTEGER
+      required: true
+      default: 0
+    aju_nega:
+      type: INTEGER
+      required: true
+      default: 0
+    aju_posmc:
+      type: INTEGER
+      required: true
+      default: 0
+    aju_posac:
+      type: INTEGER
+      required: true
+      default: 0
+    aju_negmc:
+      type: INTEGER
+      required: true
+      default: 0
+    aju_negac:
+      type: INTEGER
+      required: true
+      default: 0
+    pventa:
+      type: INTEGER
+      required: true
+      default: 0
+    turnosic:
+      type: INTEGER
+      required: true
+      default: 0
+    plv_num:
+      type: INTEGER
+      required: true
+      default: 0
+    plc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    tabislr:
+      type: INTEGER
+      required: true
+      default: 0
+    imp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    rma_cli:
+      type: INTEGER
+      required: true
+      default: 0
+    rma_prov:
+      type: INTEGER
+      required: true
+      default: 0
+    rma_entc:
+      type: INTEGER
+      required: true
+      default: 0
+    rma_entp:
+      type: INTEGER
+      required: true
+      default: 0
+    rma_regs:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_s1:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    fact_s2:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    fact_s3:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    fact_s4:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    fact_s5:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nde_s1:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nde_s2:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nde_s3:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nde_s4:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nde_s5:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nc_s1:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nc_s2:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nc_s3:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nc_s4:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nc_s5:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nd_s1:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nd_s2:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nd_s3:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nd_s4:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    nd_s5:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    fact_f1:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_f2:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_f3:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_f4:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_f1:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_f2:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_f3:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_f4:
+      type: INTEGER
+      required: true
+      default: 0
+    nc_f1:
+      type: INTEGER
+      required: true
+      default: 0
+    nc_f2:
+      type: INTEGER
+      required: true
+      default: 0
+    nc_f3:
+      type: INTEGER
+      required: true
+      default: 0
+    nc_f4:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_f1:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_f2:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_f3:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_f4:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_p1:
+      type: INTEGER
+      required: true
+      default: 1
+    fact_p2:
+      type: INTEGER
+      required: true
+      default: 1
+    fact_p3:
+      type: INTEGER
+      required: true
+      default: 1
+    fact_p4:
+      type: INTEGER
+      required: true
+      default: 1
+    fact_p5:
+      type: INTEGER
+      required: true
+      default: 1
+    nde_p1:
+      type: INTEGER
+      required: true
+      default: 1
+    nde_p2:
+      type: INTEGER
+      required: true
+      default: 1
+    nde_p3:
+      type: INTEGER
+      required: true
+      default: 1
+    nde_p4:
+      type: INTEGER
+      required: true
+      default: 1
+    nde_p5:
+      type: INTEGER
+      required: true
+      default: 1
+    nc_p1:
+      type: INTEGER
+      required: true
+      default: 1
+    nc_p2:
+      type: INTEGER
+      required: true
+      default: 1
+    nc_p3:
+      type: INTEGER
+      required: true
+      default: 1
+    nc_p4:
+      type: INTEGER
+      required: true
+      default: 1
+    nc_p5:
+      type: INTEGER
+      required: true
+      default: 1
+    nd_p1:
+      type: INTEGER
+      required: true
+      default: 1
+    nd_p2:
+      type: INTEGER
+      required: true
+      default: 1
+    nd_p3:
+      type: INTEGER
+      required: true
+      default: 1
+    nd_p4:
+      type: INTEGER
+      required: true
+      default: 1
+    nd_p5:
+      type: INTEGER
+      required: true
+      default: 1
+    fact_num2:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_num3:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_num4:
+      type: INTEGER
+      required: true
+      default: 0
+    fact_num5:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_num2:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_num3:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_num4:
+      type: INTEGER
+      required: true
+      default: 0
+    nde_num5:
+      type: INTEGER
+      required: true
+      default: 0
+    nc_num2:
+      type: INTEGER
+      required: true
+      default: 0
+    nc_num3:
+      type: INTEGER
+      required: true
+      default: 0
+    nc_num4:
+      type: INTEGER
+      required: true
+      default: 0
+    nc_num5:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_num2:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_num3:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_num4:
+      type: INTEGER
+      required: true
+      default: 0
+    nd_num5:
+      type: INTEGER
+      required: true
+      default: 0
+    serie2:
+      type: BOOLEAN
+      required: true
+      default: 0
+    serie3:
+      type: BOOLEAN
+      required: true
+      default: 0
+    serie4:
+      type: BOOLEAN
+      required: true
+      default: 0
+    serie5:
+      type: BOOLEAN
+      required: true
+      default: 0
+    emp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    dmc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    tax_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ced_num:
+      type: INTEGER
+      required: true
+      default: 0
+    ent_num:
+      type: INTEGER
+      required: true
+      default: 0
+    cie_num:
+      type: INTEGER
+      required: true
+      default: 0
+    odp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    req_num:
+      type: INTEGER
+      required: true
+      default: 0
+    dev_num:
+      type: INTEGER
+      required: true
+      default: 0
+    exp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    inp_num:
+      type: INTEGER
+      required: true
+      default: 0
+    cost_num:
+      type: INTEGER
+      required: true
+      default: 0
+    par_num:
+      type: INTEGER
+      required: true
+      default: 0
+    esc_num:
+      type: INTEGER
+      required: true
+      default: 0
+    pla_num:
+      type: INTEGER
+      required: true
+      default: 0
+    men_num:
+      type: INTEGER
+      required: true
+      default: 0
+    dist_num:
+      type: INTEGER
+      required: true
+      default: 0
+    exp_numi:
+      type: INTEGER
+      required: true
+      default: 0
+    _indexes:
+      almacen_co_alma:
+        - co_alma
+      index_2083538506:
+        - rowguid
+      ialma_des:
+        - alma_des
+      ico_alma:
+        - co_alma
+  lin_art:
+    co_lin:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    lin_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    co_imun:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    co_reten:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    comi_lin:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    comi_lin2:
+      type: NUMERIC
+      size: 8
+      scale: 2
+      required: true
+      default: 0
+    row_id:
+      type: BINARY
+      required: true
+    va:
+      type: BOOLEAN
+      required: true
+      default: 0
+    i_lin_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    movil:
+      type: BOOLEAN
+      required: true
+      default: 0
+    _indexes:
+      index_1824061584:
+        - rowguid
+      lin_art_co_lin:
+        - co_lin
+      ilin_des:
+        - lin_des
+  cat_art:
+    co_cat:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    cat_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    co_imun:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    co_reten:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    row_id:
+      type: BINARY
+      required: true
+    movil:
+      type: BOOLEAN
+      required: true
+      default: 0
+    _indexes:
+      cat_art_co_cat:
+        - co_cat
+      index_384056454:
+        - rowguid
+      icat_des:
+        - cat_des
+  sub_lin:
+    co_subl:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    subl_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_lin:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+      foreignTable: lin_art
+      foreignReference: co_lin
+      onDelete:
+      onUpdate:
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    co_imun:
+      type: CHAR
+      size: 15
+      required: true
+      default: " "
+    co_reten:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    i_subl_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    movil:
+      type: BOOLEAN
+      required: true
+      default: 0
+    _indexes:
+      index_972582553:
+        - rowguid
+      sub_lin_co_subl:
+        - co_subl
+        - co_lin
+      ico_lin:
+        - co_lin
+      ico_subl:
+        - co_subl
+      isubl_des:
+        - subl_des
+  colores:
+    co_col:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    des_col:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    _indexes:
+      colores_co_col:
+        - co_col
+      index_560057081:
+        - rowguid
+      ides_col:
+        - des_col
+  proceden:
+    cod_proc:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    des_proc:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    _indexes:
+      index_636581356:
+        - rowguid
+      proceden_cod_proc:
+        - cod_proc
+      ides_proc:
+        - des_proc
+  prov:
+    co_prov:
+      type: CHAR
+      size: 10
+      required: true
+      primaryKey: true
+    prov_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_seg:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: segmento
+      foreignReference: co_seg
+      onDelete:
+      onUpdate:
+    co_zon:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: zona
+      foreignReference: co_zon
+      onDelete:
+      onUpdate:
+    inactivo:
+      type: BOOLEAN
+      required: true
+      default: 0
+    productos:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    direc1:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    direc2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    telefonos:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    fax:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    respons:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    fecha_reg:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    tipo:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: tipo_pro
+      foreignReference: tip_pro
+      onDelete:
+      onUpdate:
+    com_ult_co:
+      type: INTEGER
+      required: true
+      default: 0
+    fec_ult_co:
+      type: VARCHAR
+      required: true
+      #default: (convert(varchar(10),getdate(),104))
+    net_ult_co:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    saldo:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    saldo_ini:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    mont_cre:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    plaz_pag:
+      type: INTEGER
+      required: true
+      default: 0
+    desc_ppago:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    desc_glob:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    tipo_iva:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    iva:
+      type: DECIMAL
+      size: 20
+      scale: 2
+      required: true
+      default: 0
+    rif:
+      type: CHAR
+      size: 18
+      required: true
+      default: " "
+    nacional:
+      type: BOOLEAN
+      required: true
+      default: 0
+    dis_cen:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    nit:
+      type: CHAR
+      size: 18
+      required: true
+      default: " "
+    email:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_ingr:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: cta_ingr
+      foreignReference: co_ingr
+      onDelete:
+      onUpdate:
+    comentario:
+      type: LONGVARCHAR
+      size: 2147483647
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo5:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo6:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo7:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo8:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    juridico:
+      type: BOOLEAN
+      required: true
+      default: 0
+    tipo_adi:
+      type: NUMERIC
+      size: 3
+      required: true
+      default: 1
+    matriz:
+      type: CHAR
+      size: 10
+      required: true
+      default: " "
+    co_tab:
+      type: INTEGER
+      required: true
+      default: 0
+    tipo_per:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_pais:
+      type: VARCHAR
+      size: 6
+      required: true
+      default: " "
+    ciudad:
+      type: VARCHAR
+      size: 50
+      required: true
+      default: " "
+    zip:
+      type: VARCHAR
+      size: 10
+      required: true
+      default: " "
+    website:
+      type: CHAR
+      size: 200
+      required: true
+      default: " "
+    formtype:
+      type: CHAR
+      size: 30
+      required: true
+      default: " "
+    taxid:
+      type: CHAR
+      size: 20
+      required: true
+      default: " "
+    contribu_e:
+      type: BOOLEAN
+      required: true
+      default: 0
+    porc_esp:
+      type: FLOAT
+      size: 8
+      required: true
+      default: 0
+    _indexes:
+      index_1987538164:
+        - rowguid
+      prov_co_prov:
+        - co_prov
+      ico_seg:
+        - co_seg
+      ico_zon:
+        - co_zon
+      iprov_des:
+        - prov_des
+      itipo:
+        - tipo
+  unidades:
+    co_uni:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    des_uni:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    row_id:
+      type: BINARY
+      required: true
+    _indexes:
+      index_1548584605:
+        - rowguid
+      unidades_co_uni:
+        - co_uni
+      ides_uni:
+        - des_uni
+  tabulado:
+    tipo:
+      type: CHAR
+      size: 1
+      required: true
+      primaryKey: true
+    descripcio:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    porc_vent:
+      type: DECIMAL
+      size: 12
+      scale: 3
+      required: true
+      default: 0
+    porc_comp:
+      type: DECIMAL
+      size: 12
+      scale: 3
+      required: true
+      default: 0
+    porc_cxs:
+      type: DECIMAL
+      size: 12
+      scale: 3
+      required: true
+      default: 0
+    porc_otro:
+      type: DECIMAL
+      size: 12
+      scale: 3
+      required: true
+      default: 0
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    _indexes:
+      index_1651536967:
+        - rowguid
+      tabulado_tipo:
+        - tipo
+      idescrip:
+        - descripcio
+  sub_alma:
+    co_sub:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    des_sub:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_alma:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+      foreignTable: almacen
+      foreignReference: co_alma
+      onDelete:
+      onUpdate:
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    noventa:
+      type: BOOLEAN
+      required: true
+      default: 0
+    nocompra:
+      type: BOOLEAN
+      required: true
+      default: 0
+    materiales:
+      type: BOOLEAN
+      required: true
+      default: 0
+    produccion:
+      type: BOOLEAN
+      required: true
+      default: 0
+    _indexes:
+      index_876582211:
+        - rowguid
+      sub_alma_co_sub:
+        - co_sub
+      ico_alma:
+        - co_alma
+      ides_sub:
+        - des_sub
+  tipo_pro:
+    tip_pro:
+      type: CHAR
+      size: 6
+      required: true
+      primaryKey: true
+    des_tipo:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo1:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo2:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo3:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    campo4:
+      type: VARCHAR
+      size: 60
+      required: true
+      default: " "
+    co_us_in:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_in:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_mo:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_mo:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    co_us_el:
+      type: CHAR
+      size: 4
+      required: true
+      default: " "
+    fe_us_el:
+      type: VARCHAR
+      required: true
+      #default: >
+      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
+    revisado:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    trasnfe:
+      type: CHAR
+      size: 1
+      required: true
+      default: " "
+    co_sucu:
+      type: CHAR
+      size: 6
+      required: true
+      default: " "
+    rowguid:
+      type: CHAR
+      size: 16
+      required: true
+      default: (newid())
+    _indexes:
+      index_1308583750:
+        - rowguid
+      tipo_pro_tip_pro:
+        - tip_pro
+      ides_tipo:
+        - des_tipo

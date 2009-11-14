@@ -1,0 +1,19 @@
+dev:
+  propel:
+    param:
+      classname: DebugPDO
+test:
+  propel:
+    param:
+      classname: DebugPDO
+all:
+  propel:
+    class: sfPropelDatabase
+    param:
+      phptype:   mssql
+      classname: MssqlPropelPDO
+      dsn:       dblib:host=192.168.0.16;dbname=RECADMAR
+      username:  luelher
+      password:  797965
+      encoding:  
+      pooling:   true
