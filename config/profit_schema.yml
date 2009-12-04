@@ -1,6 +1,6 @@
 ---
-propel:
-  _attributes: { noXsd: false, defaultIdMethod: none, package: lib.model }
+profit:
+  _attributes: { noXsd: false, defaultIdMethod: none, package: lib.model.profit }
   clientes:
     co_cli:
       _attributes: { phpName: Cedula }

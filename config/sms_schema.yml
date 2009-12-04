@@ -1,0 +1,38 @@
+sms:
+  _attributes:
+    package: lib.model.sms
+    defaultIdMethod: native
+  inbox:
+    _attributes: { phpName: Inbox }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    number: { type: VARCHAR, size: '20', required: true, defaultValue: '' }
+    smsdate: { type: TIMESTAMP, required: true, defaultValue: '0000-00-00 00:00:00' }
+    insertdate: { type: TIMESTAMP, required: true, defaultExpr: CURRENT_TIMESTAMP }
+    text: { type: LONGVARCHAR, required: false }
+    phone: { type: TINYINT, size: '4', required: false }
+    processed: { type: TINYINT, size: '4', required: true, defaultValue: '0' }
+  multipartinbox:
+    _attributes: { phpName: Multipartinbox }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    number: { type: VARCHAR, size: '20', required: true, defaultValue: '' }
+    smsdate: { type: TIMESTAMP, required: true, defaultValue: '0000-00-00 00:00:00' }
+    insertdate: { type: TIMESTAMP, required: true, defaultExpr: CURRENT_TIMESTAMP }
+    text: { type: LONGVARCHAR, required: false }
+    phone: { type: TINYINT, size: '4', required: false }
+    processed: { type: TINYINT, size: '4', required: true, defaultValue: '0' }
+    refnum: { type: INTEGER, size: '8', required: false }
+    maxnum: { type: INTEGER, size: '8', required: false }
+    curnum: { type: INTEGER, size: '8', required: false }
+  outbox:
+    _attributes: { phpName: Outbox }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    number: { type: VARCHAR, size: '20', required: true, defaultValue: '' }
+    processed_date: { type: TIMESTAMP, required: true, defaultExpr: CURRENT_TIMESTAMP }
+    insertdate: { type: TIMESTAMP, required: true, defaultValue: '0000-00-00 00:00:00' }
+    text: { type: VARCHAR, size: '160', required: false }
+    phone: { type: TINYINT, size: '4', required: false }
+    processed: { type: TINYINT, size: '4', required: true, defaultValue: '0' }
+    error: { type: TINYINT, size: '4', required: true, defaultValue: '-1' }
+    dreport: { type: TINYINT, size: '4', required: true, defaultValue: '0' }
+    not_before: { type: TIME, required: true, defaultValue: '00:00:00' }
+    not_after: { type: TIME, required: true, defaultValue: '23:59:59' }
