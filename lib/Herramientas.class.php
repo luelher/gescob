@@ -540,11 +540,19 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
 
     }else{
 
-     if(stristr($conf, '/') === FALSE){
-       $conf = sfConfig::get('sf_app_module_dir').'/'.sfContext::getInstance()->getModuleName().'/config/'.$conf;
-     }
+    if(stristr($conf, '/') === FALSE){
+      $dirconf = sfConfig::get('sf_app_module_dir').'/'.sfContext::getInstance()->getModuleName().'/config/'.$conf;
+      if(file_exists($dirconf.'.yml')) $confgrid = sfYaml::load($dirconf.'.yml');
+      else{
+        $dirconf = sfConfig::get('sf_lib_dir').'/grids/'.$conf;
+        if(file_exists($dirconf.'.yml')) $confgrid = sfYaml::load($dirconf.'.yml');
+        else $confgrid = array();
+      }
+    }else{
+      $confgrid = sfYaml::load($conf.'.yml');
+    }
 
-    $confgrid = sfYaml::load($conf.'.yml');
+    
 
     $opciones =  new OpcionesGrid();
     $colums = array();
