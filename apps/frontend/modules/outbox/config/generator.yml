@@ -1,0 +1,26 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Outbox
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          outbox
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:
+        number:
+          label: Numero
+        text:
+          label: Mensaje
+          type: textarea_tag
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:
+        title: Enviar SMS

@@ -25,15 +25,6 @@ inbox:
     column:               id
     with_wildcard_routes: true
 
-clientes:
-  class: sfPropelRouteCollection
-  options:
-    model:                Clientes
-    module:               clientes
-    prefix_path:          clientes
-    column:               co_cli
-    with_wildcard_routes: true
-
 # default rules
 homepage:
   url:   /
@@ -45,4 +36,3 @@ default_index:
 
 default:
   url:   /:module/:action/*
-

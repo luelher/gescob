@@ -9,9 +9,9 @@ default:
     language:     es_VE
     robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:    [main.css, /sf/calendar/skins/aqua/theme.css, main_jobeet.css]
 
-  javascripts:    []
+  javascripts:    [/sf/calendar/calendar.js, /sf/calendar/lang/calendar-es.js, /sf/calendar/calendar-setup.js]
 
   has_layout:     on
-  layout:         layout
+  layout:         layoutv2
