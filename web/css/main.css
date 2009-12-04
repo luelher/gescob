@@ -1,14 +1,3 @@
-/**
- * Clases Css
- *
- * @package    Roraima
- * @author     $Author$ <desarrollo@cidesa.com.ve>
- * @version SVN: $Id$
- *
- * @copyright  Copyright 2007, Cide S.A.
- * @license    http://opensource.org/licenses/gpl-2.0.php GPLv2
- */
-
 ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
 { margin: 0; padding: 0; }
 a img,:link img,:visited img { border: none; }
@@ -109,13 +98,14 @@ INPUT[disabled]{background-color:#FFFFFF;color:black;}
 
 .grid_titulo{
 	font-weight:bold;
-	background-color:#0B63A2;
+	background-color:#176f94;
 	border-right:1px #021746 solid;
 	border-left:1px #61B5CD solid;
 	border-bottom:2px #021746 solid;
 	padding:4px;
 	padding-bottom:2px;
 	text-align:center;
+  color:#FFFFFF;
 }
 
 .imagenborrar{
@@ -260,15 +250,3 @@ margin:0 !important;
 padding:5px 20px 5px 25px !important;
 }
 
-  .imagenalmacen{
-	background: transparent url("/images/Magnifier.png") no-repeat center;
-	border: none;
-	margin: 0px;
-	padding: 0px;
-	height: 16px;
-	border-width: 0px;
-	padding-left: 0px;
-	font-size: 7px;
-	text-align:left;
-	cursor: pointer;
-}
