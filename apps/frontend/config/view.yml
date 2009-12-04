@@ -3,9 +3,9 @@ default:
     content-type: text/html
 
   metas:
-    title:        Envío SMS - Cobranza
-    description:  envio de sms a clientes morosos
-    keywords:     envio sms clientes morosos
+    title:        Gestión de Cobranza - Agencia Royal 33 C.A.
+    description:  gestion de cobranza agencia royal 33
+    keywords:     envio sms clientes morosos agencia royal gestion cobranza
     language:     es_VE
     robots:       index, follow
 

@@ -46,3 +46,5 @@ default_index:
 default:
   url:   /:module/:action/*
 
+index:
+  url:   /:module/:action/*

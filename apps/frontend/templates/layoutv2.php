@@ -17,14 +17,23 @@
           </a></h1>
 
           <div id="sub_header">
-            <a href="<?php echo url_for('outbox/new') ?>">Enviar SMS</a>
             <div class="post">
               <h2>Ask for people</h2>
               <div>
                 <a href="<?php echo url_for('outbox/new') ?>">Enviar SMS</a>
               </div>
             </div>
-
+            <div id="menu">  
+            <ul>
+              <li class="current_page_item"><a href="<?php echo url_for('default') ?>">Inicio</a></li>
+              <li><a href="<?php echo url_for('sms') ?>">SMS Morosos</a></li>
+              <li><a href="<?php echo url_for('enviados') ?>">SMS Enviados</a></li>
+              <li><a href="<?php echo url_for('vencimientos') ?>">Vencimiento</a></li>
+              <li><a href="<?php echo url_for('pagos') ?>">Pagos</a></li>
+              <li><a href="<?php echo url_for('cartas') ?>">Cartas</a></li>
+              <li class="last"><a href="#">Eficiencia</a></li>
+            </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -50,17 +59,11 @@
       <div id="footer">
         <div class="content">
           <span class="symfony">
-            <img src="/images/jobeet-mini.png" />
             powered by <a href="http://www.symfony-project.org/">
             <img src="/images/symfony.gif" alt="symfony framework" />
             </a>
           </span>
-          <ul>
-            <li><a href="">About Jobeet</a></li>
-            <li class="feed"><a href="">Full feed</a></li>
-            <li><a href="">Jobeet API</a></li>
-            <li class="last"><a href="">Affiliates</a></li>
-          </ul>
+
         </div>
       </div>
     </div>
