@@ -48,3 +48,19 @@ default:
 
 index:
   url:   /:module/:action/*
+
+sms:
+  url:   /:module/:action/*
+
+enviados:
+  url:   /:module/:action/*
+
+vencimientos:
+  url:   /:module/:action/*
+
+pagos:
+  url:   /:module/:action/*
+
+cartas:
+  url:   /:module/:action/*
+
