@@ -26,11 +26,11 @@
             <div id="menu">  
             <ul>
               <li class="current_page_item"><a href="<?php echo url_for('default') ?>">Inicio</a></li>
-              <li><a href="<?php echo url_for('sms') ?>">SMS Morosos</a></li>
-              <li><a href="<?php echo url_for('enviados') ?>">SMS Enviados</a></li>
-              <li><a href="<?php echo url_for('vencimientos') ?>">Vencimiento</a></li>
-              <li><a href="<?php echo url_for('pagos') ?>">Pagos</a></li>
-              <li><a href="<?php echo url_for('cartas') ?>">Cartas</a></li>
+              <li><a href="<?php echo url_for('sms/index') ?>">SMS Morosos</a></li>
+              <li><a href="<?php echo url_for('enviados/index') ?>">SMS Enviados</a></li>
+              <li><a href="<?php echo url_for('vencimientos/index') ?>">Vencimiento</a></li>
+              <li><a href="<?php echo url_for('pagos/index') ?>">Pagos</a></li>
+              <li><a href="<?php echo url_for('cartas/index') ?>">Cartas</a></li>
               <li class="last"><a href="#">Eficiencia</a></li>
             </ul>
             </div>
