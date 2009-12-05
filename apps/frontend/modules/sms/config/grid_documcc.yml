@@ -1,8 +1,8 @@
 opciones:                  # Opciones generales
   eliminar:                false
   tabla:                   docum_cc
-  anchogrid:               700
-  ancho:                   400
+  anchogrid:               800
+  ancho:                   600
   filas:                   0
   titulo:                  ' '
   htmltotalfilas:          ' '
@@ -11,20 +11,44 @@ opciones:                  # Opciones generales
   tipo:                    k
   nombrecampo:             enviar
   html:                    [size="5" ]
-2:       # Columna 2
-  titulo:                  Tipo
-  tipo:                    t
-  nombrecampo:             tipo_doc
-  html:                    [size="10" ]
-3:       # Columna 3
+  esgrabable:              true
+2:       # Columna 3
   titulo:                  Cedula Cliente
   tipo:                    t
   nombrecampo:             co_cli
-  html:                    [size="10" ]
-4:       # Columna 4
-  titulo:                  Nro. Documento
+  html:                    [size="6" readonly=true ]
+  esgrabable:              true
+3:       # Columna 4
+  titulo:                  Nombre
   tipo:                    t
-  nombrecampo:             nro_doc
-  html:                    [size="10" ]
+  nombrecampo:             nom_cli
+  html:                    [size="20" readonly=true ]
+4:       # Columna 5
+  titulo:                  Vencimiento
+  tipo:                    t
+  nombrecampo:             fec_venc
+  html:                    [size="8" readonly=true ]
+5:       # Columna 6
+  titulo:                  Monto
+  tipo:                    m
+  nombrecampo:             monto_net
+  html:                    [size="6" readonly=true ]
+6:       # Columna 7
+  titulo:                  Observacion
+  tipo:                    t
+  nombrecampo:             observa
+  html:                    [size="20" readonly=true ]
+7:       # Columna 7
+  titulo:                  Celular
+  tipo:                    t
+  nombrecampo:             celular
+  html:                    [size="12" readonly=true ]
+  esgrabable:              true
+8:       # Columna 8
+  titulo:                  Telefono
+  tipo:                    t
+  nombrecampo:             telefono
+  html:                    [size="12" readonly=true ]
+  esgrabable:              true
 
 

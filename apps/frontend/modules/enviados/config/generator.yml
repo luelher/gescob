@@ -1,0 +1,40 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Outbox
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          enviados
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:
+        number:
+          label: Numero
+        cod_cli:
+          label: Cliente
+        cli_des:
+          label: Nombre
+        insertdate:
+          label: Enviado
+        processed_date:
+          label: Creado
+        text:
+          label: Mensaje
+          type: textarea_tag
+
+      list:
+        title: SMS Enviados
+        display: [cod_cli, cli_des, number, insertdate, processed_date ]
+        object_actions: {_edit: ~}
+        actions: {}
+      filter:
+        display: [cod_cli, number, insertdate, processed_date ]
+      form:    ~
+      edit:    ~
+      new:
+        title: Enviar SMS

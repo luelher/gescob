@@ -41,7 +41,7 @@ class smsActions extends sfActions
     //$c->setLimit(20);
 
     //$reg = ClientesPeer::doSelect($c);
-    $reg = DocumCcPeer::doSelect($c);
+    $reg = DocumCcPeer::doSelectJoinClientes($c);
     //$reg = array(new DocumCC());
 
     //$this->obj = H::getConfigGrid("grid_documcc",$reg);
@@ -65,7 +65,30 @@ class smsActions extends sfActions
 
   public function executeEnviar()
   {
-      $this->grid = $this->getRequestParameter('grid');
+    $grid = $this->getRequestParameter('grida');
+    $enviados = 0;
+    $fallidos = 0;
+
+    foreach($grid as $g)
+    {
+      if($g[6]!='' || $g[7]!=''){
+        $sms = new Outbox();
+        if($g[6]!='') $sms->setNumber($g[6]);
+        elseif($g[7]!='') $sms->setNumber($g[7]);
+        $msj = "Saludos, Agencia Royal le recuerda que el ".substr($g[3], 0,11)." se vencio su cuota por ".$g[4]." Bsf";
+        $sms->setText($msj);
+        $sms->setCodCli($g[1]);
+        $sms->setInsertdate(date('Y-m-d H:m:s'));
+        $sms->save();
+        $enviados++;
+      }else $fallidos++;
+    }
+
+    if($enviados>0) $this->getUser()->setFlash('notice', "Se enviaron ".$enviados." notificaciones" );
+    if($fallidos>0) $this->getUser()->setFlash('error', "No se pudieron enviar ".$fallidos." notificaciones" );
+
+
+
   }
 
 }
