@@ -1,0 +1,3 @@
+# Sqlfile -> Database map
+lib.model.sms.schema.sql=sms
+lib.model.profit.schema.sql=profit
