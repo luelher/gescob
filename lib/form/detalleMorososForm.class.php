@@ -11,7 +11,7 @@ class detalleMorososForm extends sfForm {
   {
     $per = $this->getOption('per');
     $this->setWidgetSchema(new sfWidgetFormSchema(array(
-      'grid'  => new sfWidgetFormGrid(array('config' => $this->getOption('config'),'per' => $per)) ,
+      'resultado'  => new sfWidgetFormGrid(array('config' => $this->getOption('config'),'per' => $per)) ,
       'cantidad_de_clientes'   => new sfWidgetFormInput(array(),array('readonly'=>true, 'value' => count($per))),
     )));
 

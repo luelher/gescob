@@ -2,7 +2,9 @@
 
 class DocumCc extends BaseDocumCc
 {
-  protected $enviar = false;
+  protected $enviar = true;
+  protected $celular = '';
+  protected $telefono = '';
 
   public function getEnviar()
   {
@@ -12,6 +14,55 @@ class DocumCc extends BaseDocumCc
   public function setEnviar($val)
   {
     $this->enviar = $val;
+  }
+
+  public function getNomCli()
+  {
+    $clientes = $this->getClientes();
+    if($clientes) return $clientes->getCliDes();
+    else return C::VACIO;
+  }
+
+  public function getCelular()
+  {
+    $clientes = $this->getClientes();
+
+    $nros = $clientes->getTelefonos();
+    $nrosarray = explode('/', $nros);
+
+    foreach ($nrosarray as $nro){
+      if(H::esCelular($nro)){
+        $cel = H::analizarNroTelefono($nro);
+        return '+58'.$cel[0].$cel[1];
+      }
+    }
+    return '';
+  }
+
+  public function getTelefono()
+  {
+    $clientes = $this->getClientes();
+
+    $nros = $clientes->getTelefonos();
+    $nrosarray = explode('/', $nros);
+
+    foreach ($nrosarray as $nro){
+      if(!H::esCelular($nro)){
+        $cel = H::analizarNroTelefono($nro);
+        return '+58'.$cel[0].$cel[1];
+      }
+    }
+    return '';
+  }
+
+  public function setCelular($val)
+  {
+    $this->celular = $val;
+  }
+
+  public function setTelefono($val)
+  {
+    $this->telefono = $val;
   }
 
 

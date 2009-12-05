@@ -39,4 +39,16 @@ class OutboxForm extends BaseOutboxForm
 
     $this->widgetSchema->setFormFormatterName('list');
   }
+
+  public function save($con = null)
+  {
+    $this->object->setInsertdate(date('Y-m-d H:m:s'));
+    parent::save($con);
+  }
+
+  public function setCodCli($cli)
+  {
+    $this->object->setCodCli($cli);
+  }
+
 }

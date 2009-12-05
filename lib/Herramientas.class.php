@@ -2220,6 +2220,24 @@ public static function obtenerDiaMesOAno($fecha,$formato,$dmoa)
 	  return H::FormatoFecha($FechaFin);
 	}
 
+  public static function analizarNroTelefono($nro)
+  {
+    $nro = trim($nro);
+    $cod = substr($nro, 1, 3);
+    $tel = substr($nro, 4);
+    
+    return array($cod,$tel);
+
+  }
+
+  public static function esCelular($nro){
+    $tel = self::analizarNroTelefono($nro);
+    $cod = $tel[0];
+
+    if($cod=='416' || $cod=='426' || $cod=='414' || $cod=='424' || $cod=='412') return true;
+    else return false;
+
+  }
 
 }
 
