@@ -16,6 +16,16 @@ outbox:
     column:               id
     with_wildcard_routes: true
 
+enviados:
+  class: sfPropelRouteCollection
+  options:
+    model:                Outbox
+    module:               enviados
+    prefix_path:          enviados
+    column:               id
+    with_wildcard_routes: true
+
+
 inbox:
   class: sfPropelRouteCollection
   options:
@@ -45,5 +55,3 @@ default_index:
 
 default:
   url:   /:module/:action/*
-
-
