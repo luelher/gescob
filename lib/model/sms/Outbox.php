@@ -2,6 +2,9 @@
 
 class Outbox extends BaseOutbox
 {
+
+  protected $enviar = true;
+
   public function getCodCli()
   {
     $c = new Criteria();
@@ -21,4 +24,25 @@ class Outbox extends BaseOutbox
     else return 'SIN NOM. CLI.';
 
   }
+
+  public function getEnviar()
+  {
+    return $this->enviar;
+  }
+
+  public function setEnviar($val)
+  {
+    $this->enviar = $val;
+  }
+
+  public function getInsertdate($format = 'd-m-Y')
+  {
+    return parent::getInsertdate($format);
+  }
+
+  public function getProcessedDate($format = 'd-m-Y')
+  {
+    return parent::getProcessedDate($format);
+  }
+
 }

@@ -65,5 +65,9 @@ class DocumCc extends BaseDocumCc
     $this->telefono = $val;
   }
 
+  public function getFecVenc($format='d-m-Y')
+  {
+    return parent::getFecVenc('d-m-Y');
+  }
 
 }

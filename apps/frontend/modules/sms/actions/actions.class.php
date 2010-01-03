@@ -63,7 +63,7 @@ class smsActions extends sfActions
 
   }
 
-  public function executeEnviar()
+  public function executeExportar()
   {
     $grid = $this->getRequestParameter('grida');
     $enviados = 0;

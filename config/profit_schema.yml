@@ -1800,11 +1800,11 @@ profit:
       required: true
       default: 0
     fec_emis:
-      type: VARCHAR
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     fec_venc:
-      type: VARCHAR
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     observa:
