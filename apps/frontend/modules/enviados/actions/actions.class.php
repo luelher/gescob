@@ -18,7 +18,7 @@ class enviadosActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
 
-    $desde = H::AddDaysDate(date('Y-m-d'), -7);
+    $desde = H::AddDaysDate(date('Y-m-d'), 0);
     $desde = date('d/m/Y',strtotime($desde));
     $this->configGrid($desde, $desde);
 
@@ -32,10 +32,10 @@ class enviadosActions extends sfActions
     $fhasta = split('/', $hasta) ;
 
     $c = new Criteria();
-    $c->add(OutboxPeer::PROCESSED,true);
-    $c->add(OutboxPeer::PROCESSED_DATE,OutboxPeer::PROCESSED_DATE." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
-    $c->add(OutboxPeer::INSERTDATE,OutboxPeer::PROCESSED_DATE." <= '$fhasta[2]-$fhasta[1]-$fhasta[0]'",Criteria::CUSTOM);
-    $c->addAscendingOrderByColumn(OutboxPeer::PROCESSED_DATE);
+    //$c->add(OutboxPeer::PROCESSED,true);
+    $c->add(OutboxPeer::PROCESSED_DATE,OutboxPeer::INSERTDATE." >= '$fdesde[2]-$fdesde[1]-$fdesde[0] 00:00:00'",Criteria::CUSTOM);
+    $c->add(OutboxPeer::INSERTDATE,OutboxPeer::INSERTDATE." <= '$fhasta[2]-$fhasta[1]-$fhasta[0] 23:59:59' ",Criteria::CUSTOM);
+    $c->addAscendingOrderByColumn(OutboxPeer::INSERTDATE);
 
     //$c->setLimit(20);
 
@@ -82,18 +82,18 @@ class enviadosActions extends sfActions
 <html>
 <head>
 <meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
-<style id="Classeur1_16681_Styles"></style>
 </head>
-<body>
-<div id="Classeur1_16681" align=center x:publishsource="Excel">'."<table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse'>");
+<body>'."<table>");
 
 
     fputs($ar,"<tr>
 <td>Cliente</td>
 <td>Nombre</td>
 <td>Numero Enviado</td>
+<td>Fecha Vencimiento</td>
 <td>Fecha Creacion</td>
 <td>Fecha Envio</td>
+<td>Procesado</td>
 </tr>");
 
     foreach($grid as $g)
@@ -106,11 +106,13 @@ class enviadosActions extends sfActions
 <td>".$g[3]."</td>
 <td>".$g[4]."</td>
 <td>".$g[5]."</td>
+<td>".$g[6]."</td>
+<td>".$g[7]."</td>
 </tr>");
         $enviados++;
       }else $fallidos++;
     }
-    fputs($ar,'</table></div></body></html>');
+    fputs($ar,'</table></body></html>');
     fclose($ar);
 
     if($enviados>0) $this->getUser()->setFlash('notice', "Se exportaron ".$enviados." notificaciones" );

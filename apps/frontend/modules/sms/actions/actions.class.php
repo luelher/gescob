@@ -42,6 +42,14 @@ class smsActions extends sfActions
 
     //$reg = ClientesPeer::doSelect($c);
     $reg = DocumCcPeer::doSelectJoinClientes($c);
+    $regaux = array();
+    foreach ($reg as $i => $cli){
+      $c = new Criteria();
+      $c->add(OutboxPeer::FEC_VENC,"$fdesde[2]-$fdesde[1]-$fdesde[0]");
+      $c->add(OutboxPeer::CO_CLI,$cli->getCoCli());
+      $outbox = OutboxPeer::doSelectOne($c);
+      if(!$outbox) $regaux[] = $cli;
+    }
     //$reg = array(new DocumCC());
 
     //$this->obj = H::getConfigGrid("grid_documcc",$reg);
@@ -50,7 +58,7 @@ class smsActions extends sfActions
 
     $this->buscarmorosos = new buscarMororosForm(array('fecha_desde' => $desde, 'fecha_hasta' => $hasta));
 
-    $this->detallemorosos = new detalleMorososForm(array(),array('per' => $reg, 'config' => 'grid_documcc'));
+    $this->detallemorosos = new detalleMorososForm(array(),array('per' => $regaux, 'config' => 'grid_documcc'));
 
   }
 
@@ -63,24 +71,34 @@ class smsActions extends sfActions
 
   }
 
-  public function executeExportar()
+  public function executeEnviar()
   {
     $grid = $this->getRequestParameter('grida');
     $enviados = 0;
     $fallidos = 0;
+    $enviar=true;
 
     foreach($grid as $g)
     {
       if($g[6]!='' || $g[7]!=''){
         $sms = new Outbox();
-        if($g[6]!='') $sms->setNumber($g[6]);
-        elseif($g[7]!='') $sms->setNumber($g[7]);
-        $msj = "Saludos, Agencia Royal le recuerda que el ".substr($g[3], 0,11)." se vencio su cuota por ".$g[4]." Bsf";
-        $sms->setText($msj);
-        $sms->setCodCli($g[1]);
-        $sms->setInsertdate(date('Y-m-d H:m:s'));
-        $sms->save();
-        $enviados++;
+        $enviar = true;
+        if($g[6]!='') {
+          if(strlen($g[6])>10) $sms->setNumber($g[6]);
+          else $enviar=false;
+        }elseif($g[7]!='') {
+          if(strlen($g[7])>10) $sms->setNumber($g[7]);
+          else $enviar=false;
+        }else $enviar=false;
+        if($enviar){
+          $msj = "Saludos, Agencia Royal le recuerda que el ".substr($g[3], 0,11)." se vencio su cuota mensual por ".number_format($g[4],2) ." Bsf";
+          $sms->setText($msj);
+          $sms->setCoCli($g[1]);
+          $sms->setFecVenc( date('Y-m-d',strtotime(substr($g[3], 0,11))));
+          $sms->setInsertdate(date('Y-m-d H:m:s'));
+          $sms->save();
+          $enviados++;
+        }else $fallidos++;
       }else $fallidos++;
     }
 

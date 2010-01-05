@@ -36,5 +36,6 @@ sms:
     dreport: { type: TINYINT, size: '4', required: true, defaultValue: '0' }
     not_before: { type: TIME, required: true, defaultValue: '00:00:00' }
     not_after: { type: TIME, required: true, defaultValue: '23:59:59' }
-    cod_cli: { type: VARCHAR, size: '20', required: false, defaultValue: '' }
+    co_cli: { type: VARCHAR, size: '20', required: false, defaultValue: '' }
+    fec_venc: { type: DATE, required: true }
 

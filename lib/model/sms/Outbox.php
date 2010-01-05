@@ -8,7 +8,7 @@ class Outbox extends BaseOutbox
   public function getCodCli()
   {
     $c = new Criteria();
-    $c->add(ClientesPeer::CO_CLI,$this->cod_cli);
+    $c->add(ClientesPeer::CO_CLI,$this->co_cli);
     $cliente = ClientesPeer::doSelectOne($c);
     if($cliente) return $cliente->getCoCli();
     else return 'SIN COD. CLI.';
@@ -18,7 +18,7 @@ class Outbox extends BaseOutbox
   public function getCliDes()
   {
     $c = new Criteria();
-    $c->add(ClientesPeer::CO_CLI,$this->cod_cli);
+    $c->add(ClientesPeer::CO_CLI,$this->co_cli);
     $cliente = ClientesPeer::doSelectOne($c);
     if($cliente) return $cliente->getCliDes();
     else return 'SIN NOM. CLI.';
@@ -43,6 +43,17 @@ class Outbox extends BaseOutbox
   public function getProcessedDate($format = 'd-m-Y')
   {
     return parent::getProcessedDate($format);
+  }
+
+  public function getProcesado()
+  {
+    if($this->processed) return 'Procesado';
+    else return 'Por Procesar';
+  }
+
+  public function getVencimiento()
+  {
+    return $this->getFecVenc('d-m-Y');
   }
 
 }

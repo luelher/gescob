@@ -250,3 +250,12 @@ margin:0 !important;
 padding:5px 20px 5px 25px !important;
 }
 
+.flash_error {
+float:left !important;
+width: 300px !important;
+}
+
+.flash_notice {
+float:left !important;
+width: 300px !important;
+}

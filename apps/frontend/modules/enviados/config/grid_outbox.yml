@@ -16,7 +16,7 @@ opciones:                  # Opciones generales
   titulo:                  Cliente
   tipo:                    t
   nombrecampo:             cod_cli
-  html:                    [size="12" ]
+  html:                    [size="8" ]
   esgrabable:              true
 3:       # Columna 4
   titulo:                  Nombre
@@ -29,12 +29,23 @@ opciones:                  # Opciones generales
   nombrecampo:             number
   html:                    [size="12" readonly=true ]
 5:       # Columna 6
+  titulo:                  Fecha Vencimiento
+  tipo:                    t
+  nombrecampo:             vencimiento
+  html:                    [size="7" readonly=true ]
+6:       # Columna 6
   titulo:                  Fecha Creación
   tipo:                    t
   nombrecampo:             insertdate
-  html:                    [size="10" readonly=true ]
-6:       # Columna 7
+  html:                    [size="7" readonly=true ]
+7:       # Columna 7
   titulo:                  Fecha Envío
   tipo:                    t
   nombrecampo:             processed_date
-  html:                    [size="10" readonly=true ]
+  html:                    [size="7" readonly=true ]
+8:       # Columna 7
+  titulo:                  Procesado
+  tipo:                    t
+  nombrecampo:             procesado
+  html:                    [size="8" readonly=true style="color:blue" ]
+
