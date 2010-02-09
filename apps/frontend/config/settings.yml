@@ -1,7 +1,8 @@
 prod:
   .settings:
     no_script_name:         on
-    logging_enabled:        off
+    logging_enabled:        on
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
 
 dev:
   .settings:
@@ -30,7 +31,7 @@ all:
 
     # Cache settings
     lazy_cache_key:         on        # Delays creation of a cache key until after checking whether an action or partial is cacheable
-    standard_helpers:       [Partial, Cache, Form]
+    standard_helpers:       [Partial, Cache, Form, Url]
 
 #all:
 #  .actions:

@@ -19,4 +19,9 @@ class defaultActions extends sfActions
   {
     $this->forward('home', 'index');
   }
+
+  public function executeModule(sfWebRequest $request)
+  {
+    $this->forward('home', 'index');
+  }
 }

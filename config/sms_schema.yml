@@ -2,6 +2,11 @@ sms:
   _attributes:
     package: lib.model.sms
     defaultIdMethod: native
+  cartas:
+    _attributes: { phpName: Cartas }
+    co_cli: { type: VARCHAR, size: '20', required: true }
+    entregado: { type: DATE, required: true }
+    id: { type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
   inbox:
     _attributes: { phpName: Inbox }
     id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }

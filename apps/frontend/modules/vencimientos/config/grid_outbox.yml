@@ -1,0 +1,51 @@
+opciones:                  # Opciones generales
+  eliminar:                false
+  tabla:                   outbox
+  anchogrid:               800
+  ancho:                   600
+  filas:                   0
+  titulo:                  ' '
+  htmltotalfilas:          ' '
+1:       # Columna 1
+  titulo:                  Exportar
+  tipo:                    k
+  nombrecampo:             enviar
+  html:                    [size="5" ]
+  esgrabable:              true
+2:       # Columna 1
+  titulo:                  Cliente
+  tipo:                    t
+  nombrecampo:             cod_cli
+  html:                    [size="8" ]
+  esgrabable:              true
+3:       # Columna 4
+  titulo:                  Nombre
+  tipo:                    t
+  nombrecampo:             cli_des
+  html:                    [size="30" readonly=true ]
+4:       # Columna 5
+  titulo:                  Número Enviado
+  tipo:                    t
+  nombrecampo:             number
+  html:                    [size="12" readonly=true ]
+5:       # Columna 6
+  titulo:                  Fecha Vencimiento
+  tipo:                    t
+  nombrecampo:             vencimiento
+  html:                    [size="7" readonly=true ]
+6:       # Columna 6
+  titulo:                  Fecha Creación
+  tipo:                    t
+  nombrecampo:             insertdate
+  html:                    [size="7" readonly=true ]
+7:       # Columna 7
+  titulo:                  Fecha Envío
+  tipo:                    t
+  nombrecampo:             processed_date
+  html:                    [size="7" readonly=true ]
+8:       # Columna 7
+  titulo:                  Procesado
+  tipo:                    t
+  nombrecampo:             procesado
+  html:                    [size="8" readonly=true style="color:blue" ]
+

@@ -1,0 +1,47 @@
+opciones:                  # Opciones generales
+  eliminar:                false
+  tabla:                   cobro
+  anchogrid:               800
+  ancho:                   600
+  filas:                   0
+  titulo:                  ' '
+  htmltotalfilas:          ' '
+1:       # Columna 1
+  titulo:                  Enviar
+  tipo:                    k
+  nombrecampo:             enviar
+  html:                    [size="5" ]
+  esgrabable:              true
+2:       # Columna 3
+  titulo:                  Cedula Cliente
+  tipo:                    t
+  nombrecampo:             co_cli
+  html:                    [size="6" readonly=true ]
+  esgrabable:              true
+3:       # Columna 4
+  titulo:                  Nombre
+  tipo:                    t
+  nombrecampo:             nom_cli
+  html:                    [size="25" readonly=true ]
+4:       # Columna 7
+  titulo:                  Fecha vencimiento
+  tipo:                    t
+  nombrecampo:             fec_venc
+  html:                    [size="8" readonly=true ]
+5:       # Columna 5
+  titulo:                  Fecha Pago
+  tipo:                    t
+  nombrecampo:             fec_cob
+  html:                    [size="8" readonly=true ]
+6:       # Columna 6
+  titulo:                  Monto Pagado
+  tipo:                    m
+  nombrecampo:             monto
+  html:                    [size="6" readonly=true ]
+7:       # Columna 7
+  titulo:                  Observacion
+  tipo:                    t
+  nombrecampo:             observa
+  html:                    [size="25" readonly=true ]
+  esgrabable:              true
+

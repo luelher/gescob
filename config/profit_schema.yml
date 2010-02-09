@@ -2190,6 +2190,10 @@ profit:
       type: INTEGER
       required: true
       default: 0
+      foreignTable: docum_cc
+      foreignReference: nro_doc
+      onDelete:
+      onUpdate:
     neto:
       type: DECIMAL
       size: 20
@@ -2421,6 +2425,10 @@ profit:
       type: INTEGER
       required: true
       primaryKey: true
+      foreignTable: reng_cob
+      foreignReference: cob_num
+      onDelete:
+      onUpdate:
     recibo:
       type: CHAR
       size: 15
@@ -2445,7 +2453,7 @@ profit:
       onDelete:
       onUpdate:
     fec_cob:
-      type: VARCHAR
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     anulado:
