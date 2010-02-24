@@ -91,7 +91,7 @@ class smsActions extends sfActions
           else $enviar=false;
         }else $enviar=false;
         if($enviar){
-          $msj = "Saludos, Agencia Royal le recuerda que el ".substr($g[3], 0,11)." se vencio su cuota mensual por ".number_format($g[4],2) ." Bsf";
+          $msj = "Saludos, Agencia Royal 33 le recuerda que el ".substr($g[3], 0,11)." se vencio su cuota mensual por ".number_format($g[4],2) ." Bsf";
           $sms->setText($msj);
           $sms->setCoCli($g[1]);
           $sms->setFecVenc( date('Y-m-d',strtotime(substr($g[3], 0,11))));

@@ -64,7 +64,8 @@ CREATE TABLE `outbox`
 	`dreport` TINYINT(4) default 0 NOT NULL,
 	`not_before` TIME default '00:00:00' NOT NULL,
 	`not_after` TIME default '23:59:59' NOT NULL,
-	`cod_cli` VARCHAR(20) default '',
+	`co_cli` VARCHAR(20) default '',
+	`fec_venc` DATE  NOT NULL,
 	PRIMARY KEY (`id`)
 )Type=InnoDB;
 
