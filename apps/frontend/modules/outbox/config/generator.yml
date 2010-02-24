@@ -24,3 +24,5 @@ generator:
       edit:    ~
       new:
         title: Enviar SMS
+        actions:
+          save_and_add:  ~
