@@ -153,7 +153,7 @@ class pagosActions extends sfActions
         $type = "application/force-download";
       }
       header('Content-Type: '.$type);
-      header('Content-Disposition: attachment; filename="enviados.xls"');
+      header('Content-Disposition: attachment; filename="pagos.xls"');
       header('Content-Transfer-Encoding: binary');
       header('Content-Length: '.$size);
       readfile($dirarch);
