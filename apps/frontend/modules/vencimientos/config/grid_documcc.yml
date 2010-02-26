@@ -22,7 +22,7 @@ opciones:                  # Opciones generales
   titulo:                  Nombre
   tipo:                    t
   nombrecampo:             nom_cli
-  html:                    [size="20" readonly=true ]
+  html:                    [size="19" readonly=true ]
 4:       # Columna 5
   titulo:                  Vencimiento
   tipo:                    t
@@ -32,12 +32,13 @@ opciones:                  # Opciones generales
   titulo:                  Monto
   tipo:                    m
   nombrecampo:             monto_net
-  html:                    [size="6" readonly=true ]
+  html:                    [size="5" readonly=true ]
+  estotal:                 [true, totalp]
 6:       # Columna 7
   titulo:                  Observacion
   tipo:                    t
   nombrecampo:             observa
-  html:                    [size="20" readonly=true ]
+  html:                    [size="19" readonly=true ]
 7:       # Columna 7
   titulo:                  Celular
   tipo:                    t

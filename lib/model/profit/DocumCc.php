@@ -6,6 +6,11 @@ class DocumCc extends BaseDocumCc
   protected $celular = '';
   protected $telefono = '';
 
+  public function getMontoNet()
+  {
+    return number_format($this->monto_net, 2);
+  }
+
   public function getEnviar()
   {
     return $this->enviar;

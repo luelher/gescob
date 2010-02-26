@@ -51,7 +51,7 @@ class pagosActions extends sfActions
     //$c->setDistinct();
 
 
-    $c->setLimit(200);
+    //$c->setLimit(200);
 
     //$reg = ClientesPeer::doSelect($c);
     $reg = CobrosPeer::doSelect($c);

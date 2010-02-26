@@ -5,6 +5,11 @@ class Cobros extends BaseCobros
   protected $documcc = null;
   protected $enviar = true;
 
+  public function getMonto()
+  {
+    return number_format($this->monto,2);
+  }
+
   public function getEnviar()
   {
     return $this->enviar;

@@ -38,6 +38,7 @@ opciones:                  # Opciones generales
   tipo:                    m
   nombrecampo:             monto
   html:                    [size="6" readonly=true ]
+  estotal:                 [true, totalp]
 7:       # Columna 7
   titulo:                  Observacion
   tipo:                    t
