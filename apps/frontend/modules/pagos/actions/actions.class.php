@@ -91,7 +91,7 @@ class pagosActions extends sfActions
     $enviados = 0;
     $fallidos = 0;
 //H::PrintR($grid);
-    $dirarch = "download/enviados.xls";
+    $dirarch = "download/pagos.xls";
     if(file_exists($dirarch)) unlink($dirarch);
 
     $this->archivo = $dirarch;
