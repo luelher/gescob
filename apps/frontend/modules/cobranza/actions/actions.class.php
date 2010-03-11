@@ -86,7 +86,7 @@ class cobranzaActions extends sfActions
     $enviados = 0;
     $fallidos = 0;
 //H::PrintR($grid);
-    $dirarch = "download/pagos.xls";
+    $dirarch = "download/cobranzas.xls";
     if(file_exists($dirarch)) unlink($dirarch);
 
     $this->archivo = $dirarch;
@@ -148,7 +148,7 @@ class cobranzaActions extends sfActions
         $type = "application/force-download";
       }
       header('Content-Type: '.$type);
-      header('Content-Disposition: attachment; filename="pagos.xls"');
+      header('Content-Disposition: attachment; filename="cobranzas.xls"');
       header('Content-Transfer-Encoding: binary');
       header('Content-Length: '.$size);
       readfile($dirarch);
