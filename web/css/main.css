@@ -259,3 +259,11 @@ width: 300px !important;
 float:left !important;
 width: 300px !important;
 }
+
+#error {
+  color: red !important;
+}
+
+#msj {
+  color: blue !important;
+}

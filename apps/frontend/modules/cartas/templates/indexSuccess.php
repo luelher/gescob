@@ -5,10 +5,11 @@
     'update'   => 'resultado',
     'url'      => 'cartas/insertar',
     'position' => 'after',
+    'script' => 'true'
 )) ?>
   <?php echo $insertarcarta ?>
 
   <?php echo submit_tag('Insertar') ?>
 </form>
   <br>
-<div id="resultado"></div>
+<div id="resultado" class="resultado"></div>

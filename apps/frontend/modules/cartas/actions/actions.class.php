@@ -24,34 +24,56 @@ class cartasActions extends sfActions
 
   public function executeInsertar(sfWebRequest $request)
   {
-    $this->cedula = $this->getRequestParameter('cedula');
-    $this->fecha_entrega = $this->getRequestParameter('fecha_entrega');
+    $this->error = false;
+    $this->insertarcarta = new insertarCartasForm();
 
-    $fecha = split('/', $this->fecha_entrega) ;
-//print_r($fecha);
-    $c = new Criteria();
-    $c->add(ClientesPeer::CO_CLI,$this->cedula);
+    $cartas = $request->getParameter('cartas');
 
-    $cliente = ClientesPeer::doSelectOne($c);
-    if(!$cliente){
-      $this->mensaje='Cliente no existe ('.$this->cedula.')';
-    }else{
+    $this->insertarcarta->bind($cartas);
+
+    if ($this->insertarcarta->isValid()){
+      $this->zona = $cartas['zona'];
+      $this->cedula = $cartas['cedula'];
+      $this->fecha_entrega = $cartas['fecha_entrega'];
+
+      $fecha = split('/', $this->fecha_entrega) ;
+
       $c = new Criteria();
-      $c->add(CartasPeer::CO_CLI,$this->cedula);
-      $c->add(CartasPeer::ENTREGADO,$fecha[2]-$fecha[1]-$fecha[0]);
+      $c->add(ClientesPeer::CO_CLI,$this->cedula);
 
-      $carta = CartasPeer::doSelectOne($c);
-      if($carta) {
-        $this->mensaje='ERROR: Carta ya entregada al cliente ('.$this->cedula.') para la fecha ('.$this->fecha_entrega.')';
+      $cliente = ClientesPeer::doSelectOne($c);
+      if(!$cliente){
+        $this->mensaje='Cliente no existe ('.$this->cedula.')';
+        $this->error = true;
       }else{
-        $carta = new Cartas();
-        $carta->setCoCli($this->cedula);
-        $carta->setEntregado($fecha[2]-$fecha[1]-$fecha[0]);
-        $carta->save();
-        $this->mensaje='Carta entregada al cliente ('.$this->cedula.') en fecha ('.$this->fecha_entrega.')';
-      }
-    }
+        $c = new Criteria();
+        $c->add(CartasPeer::CO_CLI,$this->cedula);
+        $c->add(CartasPeer::ENTREGADO,$fecha[2]-$fecha[1]-$fecha[0]);
 
+        $carta = CartasPeer::doSelectOne($c);
+        if($carta) {
+          $this->mensaje='ERROR: Carta ya entregada al cliente ('.$this->cedula.') para la fecha ('.$this->fecha_entrega.')';
+          $this->error = true;
+        }else{
+          $carta = new Cartas();
+          $carta->setCoCli($this->cedula);
+          $carta->setCoZon($this->zona);
+          $carta->setEntregado("$fecha[2]-$fecha[1]-$fecha[0]");
+
+          $carta->save();
+          $this->mensaje='Carta entregada al cliente ('.$this->cedula.') en fecha ('.$this->fecha_entrega.')';
+        }
+      }
+
+    }
+    else{
+      $errores = $this->insertarcarta->getErrorSchema()->getErrors();
+      foreach ($errores as $name => $error){
+        $this->mensaje=" (Error -> $name : $error) ";
+      }
+      $this->error = true;
+      
+    }
 
   }
 }

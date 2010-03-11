@@ -4,8 +4,9 @@ sms:
     defaultIdMethod: native
   cartas:
     _attributes: { phpName: Cartas }
+    co_zon: { type: VARCHAR, size: '20', required: true }
     co_cli: { type: VARCHAR, size: '20', required: true }
-    entregado: { type: DATE, required: true }
+    entregado: { type: TIMESTAMP, required: true, defaultValue: '0000-00-00 00:00:00' }
     id: { type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
   inbox:
     _attributes: { phpName: Inbox }

@@ -1,0 +1,49 @@
+opciones:                  # Opciones generales
+  eliminar:                false
+  tabla:                   cartas
+  anchogrid:               750
+  ancho:                   700
+  filas:                   0
+  titulo:                  ' '
+  htmltotalfilas:          ' '
+1:
+  titulo:                  Exportar
+  tipo:                    k
+  nombrecampo:             enviar
+  html:                    [size="5" ]
+  esgrabable:              true
+2:
+  titulo:                  Vendedor
+  tipo:                    t
+  nombrecampo:             vendedor
+  html:                    [size="8" readonly=true ]
+  esgrabable:              true
+3:       # Columna 2
+  titulo:                  Cedula Cliente
+  tipo:                    t
+  nombrecampo:             co_cli
+  html:                    [size="8" readonly=true ]
+  esgrabable:              true
+4:
+  titulo:                  Nombre Cliente
+  tipo:                    t
+  nombrecampo:             nom_cli
+  html:                    [size="29" readonly=true ]
+5:
+  titulo:                  Fecha Entrega
+  tipo:                    t
+  nombrecampo:             entregado
+  html:                    [size="7" readonly=true ]
+6:
+  titulo:                  Fecha Pago
+  tipo:                    t
+  nombrecampo:             fec_pago
+  html:                    [size="10" readonly=true ]
+7:
+  titulo:                  Cancelado
+  tipo:                    m
+  nombrecampo:             can_pago
+  html:                    [size="10" readonly=true ]
+  estotal:                 [true, totalp]
+
+

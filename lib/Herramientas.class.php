@@ -36,10 +36,10 @@ class Herramientas
    * @param array &$output Arreglo bidimencional de respuesta.
    * @return bool verdadero si encontro datos.
    */
-  public static function BuscarDatos($sql,&$output)
+  public static function BuscarDatos($bd, $sql, &$output)
   {
 
-    $con = Propel::getConnection(EmpresaPeer::DATABASE_NAME);
+    $con = Propel::getConnection($bd);
     $stmt = $con->createStatement();
     $rs = $stmt->executeQuery($sql, ResultSet::FETCHMODE_ASSOC);
 
