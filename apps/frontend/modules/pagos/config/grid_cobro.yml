@@ -36,7 +36,7 @@ opciones:                  # Opciones generales
 6:       # Columna 6
   titulo:                  Monto Pagado
   tipo:                    m
-  nombrecampo:             monto
+  nombrecampo:             mont_cob
   html:                    [size="6" readonly=true ]
   estotal:                 [true, totalp]
 7:       # Columna 7

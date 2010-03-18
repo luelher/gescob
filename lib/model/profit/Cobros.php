@@ -5,6 +5,13 @@ class Cobros extends BaseCobros
   protected $documcc = null;
   protected $enviar = true;
 
+  public function getMontCob()
+  {
+    $rengcob = $this->getRengCob();
+    if($rengcob) return number_format($rengcob->getMontCob(),2);
+    else 0.0;
+  }
+
   public function getMonto()
   {
     return number_format($this->monto,2);

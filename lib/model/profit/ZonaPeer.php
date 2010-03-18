@@ -2,11 +2,11 @@
 
 class ZonaPeer extends BaseZonaPeer
 {
-  public static function LasZonas()
+  public static function LasZonas($blank=true)
   {
     $zonas = ZonaPeer::doSelect(new Criteria());
     $result = array();
-    $result[''] = '';
+    if($blank) $result[''] = '';
     foreach ($zonas as $z){
       $result[$z->getCoZon()] = $z->getZonDes();
     }

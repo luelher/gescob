@@ -28,11 +28,11 @@ class cobranzaActions extends sfActions
 
     $desde = H::AddDaysDate(date('Y-m-d'), 0);
     $desde = date('d/m/Y',strtotime($desde));
-    $this->configGridCartas($desde, $desde);
+    $this->configGridCartas($desde, $desde, '');
 
   }
 
-  public function configGridCartas($desde, $hasta)
+  public function configGridCartas($desde, $hasta, $zona)
   {
       //tipo_doc='GIRO' and saldo<>0 and fec_venc >= '2009-11-02' and fec_venc <= '2009-11-06';
 
@@ -42,6 +42,7 @@ class cobranzaActions extends sfActions
     $c = new Criteria();
     $c->add(CartasPeer::ENTREGADO ,CartasPeer::ENTREGADO." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
     $c->add(CartasPeer::CO_CLI,CartasPeer::ENTREGADO." <= '$fhasta[2]-$fhasta[1]-$fhasta[0]'",Criteria::CUSTOM);
+    $c->add(CartasPeer::CO_ZON,$zona);
     $c->addAscendingOrderByColumn(CartasPeer::ENTREGADO);
 
     //$c->setLimit(20);
@@ -54,7 +55,7 @@ class cobranzaActions extends sfActions
     $this->hasta = $hasta;
 
 
-    $this->buscarcobros = new buscarMororosForm(array('fecha_desde' => $desde, 'fecha_hasta' => $hasta));
+    $this->buscarcobros = new buscarCartasForm(array('fecha_desde' => $desde, 'fecha_hasta' => $hasta));
 
     $this->detallecobros = new detalleMorososForm(array(),array('per' => $reg, 'config' => 'grid_cartas'));
 
@@ -66,8 +67,9 @@ class cobranzaActions extends sfActions
   {
     $desde = $this->getRequestParameter("fecha_desde");
     $hasta = $this->getRequestParameter("fecha_hasta");
+    $zona = $this->getRequestParameter("zona");
 
-    $this->configGridCartas($desde, $hasta);
+    $this->configGridCartas($desde, $hasta, $zona);
 
   }
 
@@ -103,12 +105,12 @@ class cobranzaActions extends sfActions
 
 
     fputs($ar,"<tr>
-<td>Cliente</td>
-<td>Nombre</td>
-<td>Fecha Vencimiento</td>
+<td>Vendedor</td>
+<td>Cedula Cliente</td>
+<td>Nombre Cliente</td>
+<td>Fecha Entrega</td>
 <td>Fecha Pago</td>
-<td>Monto Pagado</td>
-<td>Observacion</td>
+<td>Cancelado</td>
 </tr>");
 
     foreach($grid as $g)
