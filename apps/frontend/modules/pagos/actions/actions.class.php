@@ -39,6 +39,7 @@ class pagosActions extends sfActions
     //$c->add(DocumCcPeer::TIPO_DOC,'GIRO');
 //    $c->add(DocumCcPeer::SALDO,0);
     $c->add(CobrosPeer::MONTO,0,Criteria::NOT_EQUAL);
+    $c->add(CobrosPeer::ANULADO,false);
     //$c->add(CobrosPeer::OBSERVA,'%GIRO%',Criteria::LIKE);
 
     $c->add(CobrosPeer::FEC_COB,CobrosPeer::FEC_COB." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
