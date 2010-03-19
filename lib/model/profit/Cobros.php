@@ -48,7 +48,7 @@ class Cobros extends BaseCobros
     $rengcob = $this->getRengCob();
     if(!$this->documcc) $this->documcc = $rengcob->getDocumCc();
     if($this->documcc) return $this->documcc->getObserva();
-    else return C::VACIO;
+    else return 'Inicial ó Contado';
   }
 
   public function getFecCob($format='d-m-Y')
