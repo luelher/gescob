@@ -48,7 +48,7 @@ class Cobros extends BaseCobros
     $rengcob = $this->getRengCob();
     if(!$this->documcc) $this->documcc = $rengcob->getDocumCc();
     if($this->documcc) {
-      if($this->documcc->getObserva()!='') return $this->documcc->getObserva();
+      if(trim($this->documcc->getObserva())!='') return $this->documcc->getObserva();
         else return 'Inicial ó Contado';
     }
     else return Constantes::VACIO;
