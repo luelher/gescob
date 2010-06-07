@@ -5,6 +5,12 @@ class Outbox extends BaseOutbox
 
   protected $enviar = true;
 
+  public function setNumber($val)
+  {
+    if(strpos($val,'+58')) $val = '+58'.$val;
+    return parent::setNumber($val);
+  }
+
   public function getCodCli()
   {
     $c = new Criteria();

@@ -8,7 +8,7 @@ class DocumCc extends BaseDocumCc
 
   public function getMontoNet()
   {
-    return number_format($this->monto_net, 2);
+    return number_format($this->monto_net, 2,'.','');
   }
 
   public function getEnviar()

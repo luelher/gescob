@@ -14,7 +14,7 @@ class Cobros extends BaseCobros
 
   public function getMonto()
   {
-    return number_format($this->monto,2);
+    return number_format($this->monto,2,',','');
   }
 
   public function getEnviar()
