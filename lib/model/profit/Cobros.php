@@ -59,4 +59,13 @@ class Cobros extends BaseCobros
     return parent::getFecCob('d-m-Y');
   }
 
+  public function getDiasmora()
+  {
+    $segundos_diferencia = strtotime(parent::getFecCob('d-m-Y')) - strtotime($this->getFecVenc());
+
+    return ($segundos_diferencia / (60 * 60 * 24));
+
+
+  }
+
 }

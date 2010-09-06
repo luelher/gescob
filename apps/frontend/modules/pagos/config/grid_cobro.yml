@@ -34,12 +34,18 @@ opciones:                  # Opciones generales
   nombrecampo:             fec_cob
   html:                    [size="8" readonly=true ]
 6:       # Columna 6
+  titulo:                  Dias sin Pagar
+  tipo:                    m
+  nombrecampo:             diasmora
+  html:                    [size="6" readonly=true ]
+  estotal:                 [true, totalp]
+7:       # Columna 6
   titulo:                  Monto Pagado
   tipo:                    m
   nombrecampo:             monto
   html:                    [size="6" readonly=true ]
   estotal:                 [true, totalp]
-7:       # Columna 7
+8:       # Columna 7
   titulo:                  Observacion
   tipo:                    t
   nombrecampo:             observa
