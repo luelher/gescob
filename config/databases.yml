@@ -18,7 +18,7 @@ all:
     param:
       phptype:   mssql
       classname: MssqlPropelPDO
-      dsn:       dblib:host=192.168.0.104;dbname=RECADMAR
+      dsn:       dblib:host=192.168.56.3;dbname=RECADMAR
       username:  luelher
       password:  797965
       encoding:  

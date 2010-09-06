@@ -1,0 +1,2646 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+</head>
+<body><table><tr>
+<td>Vendedor</td>
+<td>Cedula Cliente</td>
+<td>Nombre Cliente</td>
+<td>Fecha Entrega</td>
+<td>Fecha Pago</td>
+<td>Cancelado</td>
+</tr><tr>
+<td>+582518080488</td>
+<td>4357324   </td>
+<td>FREITES DE LA CRUZ LILIA ELENA                              </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584244955894</td>
+<td>4415410   </td>
+<td>BARRETO EPIFANIA DEL CARMEN                                 </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266562552</td>
+<td>12020821  </td>
+<td>COLMENAREZ JULIO CESAR                                      </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584143513614</td>
+<td>9627548   </td>
+<td>COLMENAREZ LOYO YAILETH MARIA                               </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163153973</td>
+<td>7314186   </td>
+<td>PEÑA ANGEL REINALDO                                         </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+58416553508</td>
+<td>7329038   </td>
+<td>SUAREZ DE RAGA ALICIA ISABEL                                </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162020566</td>
+<td>6183241   </td>
+<td>GALLARDO COLMENAREZ JOSE GREGORIO                           </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512736655</td>
+<td>724646    </td>
+<td>HURTADO EDUARDO ANTONIO                                     </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166018008</td>
+<td>9607152   </td>
+<td>TORRELLAS RODRIGUEZ JUDITH  SOLANGE                         </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582515115168</td>
+<td>3203726   </td>
+<td>HERNANDEZ PINTO CESAR ALBERTO                               </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167578567</td>
+<td>7399820   </td>
+<td>GOMEZ DE BASTIDAS ANA PASTORA                               </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267572643</td>
+<td>4424512   </td>
+<td>ROBLES SUAREZ NANCY MARIA                                   </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161568896</td>
+<td>7369983   </td>
+<td>CARABALLO GIMENEZ HARDY OCTAVIO                             </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+5841215135791</td>
+<td>10773563  </td>
+<td>PARRA RAMOS CECILIA PASTORA                                 </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245164706</td>
+<td>9552848   </td>
+<td>ARRIECHE DE RIERA RUMALDA TEODORA                           </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162595356</td>
+<td>13855742  </td>
+<td>ZAMBRANO SUAREZ YENDER ALEJANDRO                            </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512327220</td>
+<td>4374412   </td>
+<td>PEREZ DE LUQUE JUANA                                        </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162540432</td>
+<td>7385010   </td>
+<td>RODRIGUEZ LUCENA RAMON DAVID                                </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514822683</td>
+<td>4477037   </td>
+<td>COLMENAREZ AURA MARINA                                      </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161051283</td>
+<td>19454513  </td>
+<td>GALINDEZ MONSALVE JENNYFER KARINA                           </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163555707</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268564182</td>
+<td>18925451  </td>
+<td>DELGADO RODRIGUEZ LISETH COROMOTO                           </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584120502304</td>
+<td>7373658   </td>
+<td>COLMENAREZ ROSAURA                                          </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162485917</td>
+<td>13786243  </td>
+<td>LUIS RAMON COLMENAREZ (A.G)                                 </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245156765</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145234643</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268576415</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165543479</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161530589</td>
+<td>7421304   </td>
+<td>ALVARADO ARRIECHE EDDY YSABEL                               </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165150679</td>
+<td>15777093  </td>
+<td>SIMOES MONSALVE OSCAR EDUARDO                               </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269552013</td>
+<td>12434538  </td>
+<td>ALVARADO MARCHAN DIANI YAMILETH                             </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584265573062</td>
+<td>15230880  </td>
+<td>SUAREZ VARGAS DEYBY GUSMIR                                  </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161207651</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163554978</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167591182</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166504788</td>
+<td>9603993   </td>
+<td>MARIN GONZALEZ NORALY BENIGNA                               </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584263532424</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145666062</td>
+<td>11880457  </td>
+<td>GIMENEZ JOSE GREGORIO                                       </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514417433</td>
+<td>7307443   </td>
+<td>PUERTA FREYTEZ  NICOLAS SEGUNDO                             </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266557746</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584263541939</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160555900</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267534937</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162563871</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166615035</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514418519</td>
+<td>638507    </td>
+<td>MADRIZ RAFAEL ANTONIO                                       </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245236627</td>
+<td>3911867   </td>
+<td>ALVARADO GOMEZ AIDA RAMONA                                  </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160526997</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267509423</td>
+<td>2880754   </td>
+<td>MEDINA ELI MARCIAL                                          </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584263537328</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267538979</td>
+<td>9150615   </td>
+<td>ALTUVE DE SALAS DOMINGA ROSA                                </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514413340</td>
+<td>9612092   </td>
+<td>CRESPO MENDOZA JESUS ANTONIO                                </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245144281</td>
+<td>3570737   </td>
+<td>SIRA ESTRELLA NOEMI                                         </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245925179</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161253454</td>
+<td>9612317   </td>
+<td>PIÑA SANDOVAL YARITZA DEL CARMEN                            </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145212564</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269555287</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266351652</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162569955</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514413132</td>
+<td>15597712  </td>
+<td>ADAMES CONTRERAS YOURY YAMILETH                             </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+5842670702850251445</td>
+<td>8785308   </td>
+<td>HERNANDEZ CARLOS MARTIN                                     </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582518866019</td>
+<td>15252534  </td>
+<td>RIVERO MANEIRO MARLYS DAYANA                                </td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161282759</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>31-05-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267350510</td>
+<td>7427604   </td>
+<td>ANZOLA CAMACHO RAMON ANTONIO                                </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514451919</td>
+<td>7302513   </td>
+<td>RODRIGUEZ BORGES BETTY JOSEFINA                             </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266354791</td>
+<td>12019143  </td>
+<td>PIRE SANTOS RAMON                                           </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584142930718</td>
+<td>3592925   </td>
+<td>RODRIGUEZ  DE GONZALEZ   JOSEFA GUADALUPE                   </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245778196</td>
+<td>15425705  </td>
+<td>MENDOZA DE DOMINGUEZ MAGVI CAROLINA                         </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145294184</td>
+<td>4387666   </td>
+<td>ZICCARDI  REYES LENIA TERESA                                </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245974094</td>
+<td>16532203  </td>
+<td>CRESPO PLAZA JESUS ANTONIO                                  </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512733825</td>
+<td>7325490   </td>
+<td>CAMACHO CARUCI MIREYA COROMOTO                              </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514470287</td>
+<td>3856845   </td>
+<td>TIMAURE RIVAS TERESA ESTELLIN                               </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165534840</td>
+<td>7562619   </td>
+<td>PINEDA MANZANO RAFAEL ANGEL                                 </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163517448</td>
+<td>10843125  </td>
+<td>PRINCIPAL DE ORTIZ NELIS DEL CARMEN                         </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149579619</td>
+<td>9851050   </td>
+<td>BALLESTEROS NIEVES GERSON TEODORO                           </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+58426-4529851</td>
+<td>18281053  </td>
+<td>UZCATEGUI CALATAYUD JOSE JAVIER                             </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149737855</td>
+<td>16867460  </td>
+<td>RODRIGUEZ RUBEN ALBERTO                                     </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584143525481</td>
+<td>18302311  </td>
+<td>CAMACHO YAJURE LUIMARLEONELA                                </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163504955</td>
+<td>3862046   </td>
+<td>CAMACARO TUA ROSA MERCEDES                                  </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512732431</td>
+<td>3540063   </td>
+<td>CASTILLO DE PEREZ JOSEFA MARIA                              </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161254218</td>
+<td>12247489  </td>
+<td>GONZALEZ MENDOZA JOAN ROBERTO                               </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167503305</td>
+<td>10760751  </td>
+<td>LOPEZ DE LAGO YESIKA ELIZABETH                              </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584263510249</td>
+<td>11427895  </td>
+<td>ANGULO RODRIGUEZ JAIRO FERNANDO                             </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162504236</td>
+<td>17993478  </td>
+<td>JIMENEZ RODRIGUEZ ANAHELYS YANETH                           </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145021971</td>
+<td>12703783  </td>
+<td>MOLINA CASTAÑEDA MARISELA PASTORA                           </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160526021</td>
+<td>9563851   </td>
+<td>ROJAS MONTILVA CLARISA DEL CARMEN                           </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162589886</td>
+<td>9558989   </td>
+<td>COLMENAREZ MARTINES MARBELLA COROMOTO                       </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160936670</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160385535</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267564261</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584262541530</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266355456</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163581146</td>
+<td>7438696   </td>
+<td>HERNANDEZ TORREALBA JENNY COROMOTO                          </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266593208</td>
+<td>12242652  </td>
+<td>ALVARADO D´LIMA ALEXIS RAMON                                </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245961113</td>
+<td>19414763  </td>
+<td>ESCALONA SOHETT WILMARY COROMOTO                            </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269512415</td>
+<td>7969045   </td>
+<td>MEDINA TIBISAY DEL CARMEN                                   </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168549870</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584121645431</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149575993</td>
+<td>12432166  </td>
+<td>CARRERA TOMAS ENRIQUE                                       </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167098715</td>
+<td>7350433   </td>
+<td>CASTILLO MARY LOLA                                          </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161041536</td>
+<td>7532971   </td>
+<td>GUTIERREZ MARILUZ COROMOTO                                  </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584263538182</td>
+<td>1275947   </td>
+<td>LANDAETA DE SANTANA ELBA DE LA CRUZ                         </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168562100</td>
+<td>7391032   </td>
+<td>MENDOZA HERNANDEZ YANEIDA RAMONA                            </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584120557003</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163612652</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584264501563</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145149702</td>
+<td>3923473   </td>
+<td>MATA ZAVALA JESUS RAFAEL                                    </td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145279947</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245625963</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>01-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168598990</td>
+<td>9511088   </td>
+<td>VALLES REYES JOSE GREGORIO                                  </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267594643</td>
+<td>17380468  </td>
+<td>VALLES LISCANO YARIANNY CAROLINA                            </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514821442</td>
+<td>3856917   </td>
+<td>OROCHENA GAVIDIA LUISA ELENA                                </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168588484</td>
+<td>3540745   </td>
+<td>GOMEZ GUTIERREZ HERMINEA MARGARITA                          </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584164578323</td>
+<td>11615591  </td>
+<td>DIAZ BERRIOS GLORES                                         </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162543521</td>
+<td>5248414   </td>
+<td>SUAREZ DE MENDOZA YRMA RAMONA                               </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514432389</td>
+<td>3537446   </td>
+<td>VARGAS ESCALONA  MIRIAM COROMOTO                            </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245470267</td>
+<td>6246037   </td>
+<td>SUAREZ OCTAVIA DEL CARMEN                                   </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266525780</td>
+<td>7461719   </td>
+<td>ALVARADO TORRES VIDALINA DEL CARMEN                         </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268540123</td>
+<td>12434149  </td>
+<td>R/A ALDAZORO CORDOVA DORISMAR ( AR)                         </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160570515</td>
+<td>11596278  </td>
+<td>QUERALES ABREU SANDY ALEXANDER                              </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161535953</td>
+<td>3533322   </td>
+<td>RODRIGUEZ DE DE LA VEGA MARIA DE LOURDES                    </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512668040</td>
+<td>7409228   </td>
+<td>RODRIGUEZ DE RODRIGUEZ BELKYS MARGARITA                     </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584262813523</td>
+<td>11126503  </td>
+<td>COLMENAREZ RODRIGUEZ REINALDO JOSE                          </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245655528</td>
+<td>3426920   </td>
+<td>MORA MENESES CARMEN CECILIA                                 </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161290402</td>
+<td>13084209  </td>
+<td>MENDOZA LILIBETH COROMOTO                                   </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162510421</td>
+<td>10268924  </td>
+<td>CABRITA MARIN ALEIDA DEL CARMEN                             </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584120543303</td>
+<td>17319838  </td>
+<td>VIZCAYA MORENO JEHAN CARLOS                                 </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163103568</td>
+<td>7584293   </td>
+<td>PACHECO MILAGRO BEATRIZ                                     </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582515115454</td>
+<td>8657237   </td>
+<td>ALVAREZ MENDEZ JOSE FERMIN                                  </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245398571</td>
+<td>922513    </td>
+<td>MOGOLLON MENDOZA RUFINO                                     </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584164577329</td>
+<td>2910856   </td>
+<td>ARIAS YEDRA ROBERTO ANTONIO                                 </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245934486</td>
+<td>17012311  </td>
+<td>ANDRADE ANDARA JAIMELIS DEL VALLE                           </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267584523</td>
+<td>9399155   </td>
+<td>ANDARA SOLARTE MARI DARLIS                                  </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168534305</td>
+<td>21504471  </td>
+<td>RODRIGUEZ LUIS ALBERTO                                      </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584265525610</td>
+<td>4369790   </td>
+<td>MORA MUJICA LUIS ARMANDO                                    </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161056088</td>
+<td>11428848  </td>
+<td>TORRES MONTERO ELY ALBERTO                                  </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514452825</td>
+<td>436746    </td>
+<td>SANTELIZ DE GUTIERREZ  FRANCISCA DE RAMONA                  </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145159050</td>
+<td>7335435   </td>
+<td>MAIORANA CROIA ANGELO                                       </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145258256</td>
+<td>11432907  </td>
+<td>DIAZ JOHANNY JOSE                                           </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268511601</td>
+<td>7354310   </td>
+<td>ARCAYA CARMEN DEL VALLE                                     </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160141321</td>
+<td>13615830  </td>
+<td>VARGAS CASTRO LUZ NEIRA                                     </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165019085</td>
+<td>12936357  </td>
+<td>VASQUEZ QUIROZ EDDY ENRIQUE                                 </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145153218</td>
+<td>9627513   </td>
+<td>TEJEDA MOCK RAMON ENRIQUE                                   </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149551238</td>
+<td>11788445  </td>
+<td>FREITEZ ESCALONA MILENNY COROMOTO                           </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266544196</td>
+<td>3315878   </td>
+<td>MOSQUERA JOSE DEL CARMEN                                    </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267087494</td>
+<td>6486624   </td>
+<td>INFANTE ANA MARIA                                           </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584263534363</td>
+<td>16386647  </td>
+<td>ALVAREZ PEREIRA YENIFER MARIA                               </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245110731</td>
+<td>4733339   </td>
+<td>GUEVARA MACHADO CESAR AUGUSTO                               </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582517190021</td>
+<td>2598638   </td>
+<td>TROCOLIS ALMAO MARIUSCA MERCEDES                            </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245015713</td>
+<td>7576760   </td>
+<td>BARRAGAN DE RANGEL YARIDA PASTORA                           </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166572644</td>
+<td>6197572   </td>
+<td>FREITEZ AIRA ROSA                                           </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245431238</td>
+<td>16866420  </td>
+<td>ARANGUREN JOSE LUIS                                         </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145446677</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584264548448</td>
+<td>16531969  </td>
+<td>MORALES CRISTINA ARACELIS                                   </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245170356</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245258183</td>
+<td>15445033  </td>
+<td>MORENO RODRIGUEZ MIGUEL JOSE                                </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167540073</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512333432</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149516886</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167590091</td>
+<td>11430733  </td>
+<td>PEREZ MEDINA JOSE ANTONIO                                   </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245618506</td>
+<td>14150954  </td>
+<td>HERNANDEZ JORBI DE JESUS                                    </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167550905</td>
+<td>5241967   </td>
+<td>LANDAETA DE CHAVEZ CECILIA ARACELIS                         </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145514169</td>
+<td>10370715  </td>
+<td>PEREZ  OCHOA DILCIA JOSEFINA                                </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584169512220</td>
+<td>5885613   </td>
+<td>ACUÑA CARPIO ANIBAL ALBERTO                                 </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584164515688</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166512108</td>
+<td>7343260   </td>
+<td>FALCON DE INOJOSA MARIA ASCENCION                           </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584164584192</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245844154</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163150651</td>
+<td>7435916   </td>
+<td>COLMENAREZ DE DUDAMEL CRUZ RAMONA                           </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162520087</td>
+<td>17858036  </td>
+<td>PEDROZA PERAZA MARIA ALEJANDRA                              </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584142224919</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266501424</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267883158</td>
+<td>7348898   </td>
+<td>LINAREZ PEREZ IGNACIO RAFAEL                                </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163533577</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163556544</td>
+<td>7337991   </td>
+<td>FIALLO DE SANTANA ANA JOSEFA                                </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145248728</td>
+<td>7436913   </td>
+<td>RINCONES NOIRALITH AMPARO                                   </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584143541604</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161573599</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584262523039</td>
+<td>7400891   </td>
+<td>RAMOS MARITZA COROMOTO                                      </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269533502</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267528019</td>
+<td>7379237   </td>
+<td>NAVAS CASTILLO CARLOS LEOTULFO                              </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512375593</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512670213</td>
+<td>13856189  </td>
+<td>SILVA CARLOS ENRIQUE                                        </td>
+<td>02-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245428635</td>
+<td>7399558   </td>
+<td>LOPEZ NELO ANA MARIA                                        </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167518029</td>
+<td>7408925   </td>
+<td>JIMENEZ RUIZ LUIS ALFREDO                                   </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160380021</td>
+<td>4072571   </td>
+<td>LOPEZ ELIZABETH TERESA                                      </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145193972</td>
+<td>7942703   </td>
+<td>CASTILLO ENEIDA JOSEFINA                                    </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245892545</td>
+<td>5240791   </td>
+<td>PARADAS DE ORTIZ OLGA MARITZA                               </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165561447</td>
+<td>13269525  </td>
+<td>PEREZ TORRES FREDDY ALBERTO                                 </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162556651</td>
+<td>10204664  </td>
+<td>QUERALES AURA NATALIE                                       </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266563093</td>
+<td>5246805   </td>
+<td>MONTESINOS DE ARRAEZ ANGELICA DEL CARMEN                    </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584164537425</td>
+<td>15553911  </td>
+<td>PEREZ GARCIA YUREIMA COROMOTO                               </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245537603</td>
+<td>3541443   </td>
+<td>GOMEZ DE SUAREZ ANA LUCIA                                   </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149569296</td>
+<td>11412367  </td>
+<td>ONTIVEROS CAMACARO OMAXIA GRACIELA                          </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582518881655</td>
+<td>7556775   </td>
+<td>MONTILLA ESCALONA GLADYS RAMONA                             </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245179015</td>
+<td>7317122   </td>
+<td>MENDOZA ESCALONA YENNY COROMOTO                             </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245908236</td>
+<td>7397949   </td>
+<td>MENDOZA ALTUNA SONNIBEL GABRIELA                            </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584242074730</td>
+<td>17379562  </td>
+<td>EREU PINEDA JOSE MARCIAL                                    </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245994149</td>
+<td>7305468   </td>
+<td>PEREZ DE CATARI OCALINA COROMOTO                            </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168535561</td>
+<td>3317938   </td>
+<td>MUJICA SANCHEZ DORY MERCEDES                                </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145116084</td>
+<td>16601299  </td>
+<td>DELGADO RUBIO EDWYN FERNANDO                                </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245182846</td>
+<td>7318812   </td>
+<td>TERAN GARCIA SAUL ANTONIO                                   </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145305399</td>
+<td>6365880   </td>
+<td>ESCALONA BARRIOS AREVALO ANTONIO                            </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165565990</td>
+<td>9188058   </td>
+<td>CAICEDO FUENTES ALVARO                                      </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245428020</td>
+<td>10703679  </td>
+<td>LUGO ESTEILA ZORAIDA EGLECIA                                </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269553790</td>
+<td>7364631   </td>
+<td>MORA PULIDO RICARDO                                         </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267502317</td>
+<td>9515809   </td>
+<td>JIMENEZ DE RIVERO MIGDALIA JOSEFINA                         </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512669186</td>
+<td>3677335   </td>
+<td>NAVEDA OMAIRA JOSEFINA                                      </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269525394</td>
+<td>7423379   </td>
+<td>MORALES DE TIMAURE FANNY DEL CARMEN                         </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268522122</td>
+<td>4196089   </td>
+<td>CANELON VALMORE JOSE                                        </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160369150</td>
+<td>5246276   </td>
+<td>SANCHEZ GIMENEZ SERGIO RAMON                                </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514465813</td>
+<td>5237935   </td>
+<td>PIÑA DE GOMEZ OLGA RAMONA                                   </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269508174</td>
+<td>9542861   </td>
+<td>COLMENAREZ VEGAS RAFAEL ANGEL                               </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512372630</td>
+<td>4374379   </td>
+<td>VARELA JOSEFA MARGARITA                                     </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145078017</td>
+<td>7980545   </td>
+<td>RODRIGUEZ GIL ZORAIDA JOSEFINA                              </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166518298</td>
+<td>10775021  </td>
+<td>VARGAS LEON JOSE ANTONIO                                    </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512327610</td>
+<td>2544064   </td>
+<td>CASTILLOTREJO MAYIBE DEL SOCORRO                            </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145215116</td>
+<td>11433190  </td>
+<td>OROZCO NORKY JOSEFINA                                       </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584265525610</td>
+<td>4369790   </td>
+<td>MORA MUJICA LUIS ARMANDO                                    </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245541846</td>
+<td>7385755   </td>
+<td>PEREIRA  OCANTO FREDDY SEGUNDO                              </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161532601</td>
+<td>6121316   </td>
+<td>MENDOZA MARIA ISABEL                                        </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165540006</td>
+<td>11789830  </td>
+<td>PEREZ ALEJOS ZULAY COROMOTO                                 </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268554065</td>
+<td>5953778   </td>
+<td>VIERA GONZALEZ ELSA MARINA                                  </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267528377</td>
+<td>17573700  </td>
+<td>JUAREZ QUERALES HECTOR JOSE                                 </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163510714</td>
+<td>7377633   </td>
+<td>QUERALES SALAS LILIA XIOMARA                                </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160595931</td>
+<td>14293290  </td>
+<td>SIRA SANCHEZ CARLOS RAMON                                   </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512670039</td>
+<td>4738118   </td>
+<td>ATACHO DE PEREZ DILCIA MERCEDES                             </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584264414737</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512691974</td>
+<td>3461398   </td>
+<td>ARAUJO CARMEN AMPARO                                        </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514451108</td>
+<td>7450240   </td>
+<td>PIÑA DE SANCHEZ  ANA VICTORIA                               </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584263508534</td>
+<td>18785619  </td>
+<td>GONZALEZ RODRIGUEZ LILIANA VIRGINIA                         </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162597353</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145012716</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245022060</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160581316</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160540793</td>
+<td>3878072   </td>
+<td>ROJAS PEROZA ANA FRANCISCA                                  </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267575546</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165561113</td>
+<td>9610591   </td>
+<td>MELENDEZ OCHOA LUCINDA DEL CARMEN                           </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149551238</td>
+<td>11788445  </td>
+<td>FREITEZ ESCALONA MILENNY COROMOTO                           </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267351916</td>
+<td>14030091  </td>
+<td>ARRIECHE PEÑA YENNY DIOSMAR                                 </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245517211</td>
+<td>7368935   </td>
+<td>PIÑERO GUADAMA CARLOS ALBERTO                               </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268383628</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245370586</td>
+<td>13267019  </td>
+<td>DAVILA MARIN JOSE UBALDO                                    </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582517151910</td>
+<td>7557739   </td>
+<td>GUEDEZ JOSE GONZALO                                         </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162585455</td>
+<td>7358053   </td>
+<td>COLMENAREZ LUQUEZ SAULO ANTONIO                             </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168509135</td>
+<td>11790568  </td>
+<td>MORALES RODRIGUEZ WILLIAM ALFREDO                           </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145082766</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165531190</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245475303</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168565834</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245413238</td>
+<td>9844178   </td>
+<td>RODRIGUEZ MELENDEZ  WILLIAMS ANTONIO                        </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161538023</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161574373</td>
+<td>4733516   </td>
+<td>TORREALBA YENNY COROMOTO                                    </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584169535351</td>
+<td>11432919  </td>
+<td>GONZALEZ ABARCA WENDY YELITZA                               </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584263525275</td>
+<td>3318087   </td>
+<td>R/A VASQUEZ  RIERA LUISA                                    </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166517643</td>
+<td>16642596  </td>
+<td>RIERA ETANISLAO JERRY MANUEL                                </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268072980</td>
+<td>3964551   </td>
+<td>ALVARADO CLARA MARIA                                        </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266535596</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165548316</td>
+<td>5254909   </td>
+<td>MANZANO DOMINGO ANTONIO                                     </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162522602</td>
+<td>15695060  </td>
+<td>MOLINA FERNANDEZ ISRAEL EDUARDO                             </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162515912</td>
+<td>22332554  </td>
+<td>DE LA HOZ FONSECA EVERLEDYS ESHTER                          </td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584169530013</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149555474</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165530630</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582518837990</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161547765</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145127378</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584164272959</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166538741</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>03-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166538741</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267594484</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168573241</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268526494</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165537712</td>
+<td>11589559  </td>
+<td>VERGARA FERNANDEZ DORIS COROMOTO                            </td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165513448</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160536049</td>
+<td>5244659   </td>
+<td>SANCHEZ BORAURE CARMEN LUCIA                                </td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245995722</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584140577491</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245370586</td>
+<td>13267019  </td>
+<td>DAVILA MARIN JOSE UBALDO                                    </td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269546429</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269521736</td>
+<td>9542009   </td>
+<td>MOLLEJAS ZULIN MARIERA                                      </td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145219921</td>
+<td>SIN COD. CLI.</td>
+<td>SIN NOM. CLI.</td>
+<td>04-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167535068</td>
+<td>5127485   </td>
+<td>PEÑA  MANUEL ANTONIO                                        </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584125229731</td>
+<td>11261052  </td>
+<td>CONDE BARBOZA YOQUIRA DEL VALLE                             </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245117787</td>
+<td>10843213  </td>
+<td>FREITEZ SANCHEZ NILDA TERESA                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161287285</td>
+<td>10846474  </td>
+<td>DUARTE GUERRERO GENRRY EFREN                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584169518982</td>
+<td>13775698  </td>
+<td>LOPEZ GUTIERREZ HEMBER ENRIQUE                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165548877</td>
+<td>7917656   </td>
+<td>PEREZ FLORES ADA ESTHER                                     </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167578567</td>
+<td>13265323  </td>
+<td>GOMEZ  ALVARADO MARIA DELLANIRA                             </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245266869</td>
+<td>23154923  </td>
+<td>PEREZ CHARRASQUIEL ANA TULIA                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161237425</td>
+<td>7393250   </td>
+<td>GIMENEZ ALFIN JUANA BARBUJA                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168532952</td>
+<td>13842881  </td>
+<td>CASTAÑEDA RAMIREZ CHRISTIAN ALEJANDRO                       </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512736502</td>
+<td>5260838   </td>
+<td>COLMENAREZ DE SILVA ANA DOLORES                             </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145160515</td>
+<td>6625447   </td>
+<td>CEBALLOS MONTOYA ALIDA DEL SOCORRO                          </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584248855337</td>
+<td>6356836   </td>
+<td>HERNANDEZ MONTES DE OCA NANCY VIRGINIA                      </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584165530850</td>
+<td>11425439  </td>
+<td>MONTES DAZA YENNYS MERCEDES                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162503117</td>
+<td>10104737  </td>
+<td>BOLIVAR CASTILLO AIXA MARGARITA                             </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514820943</td>
+<td>6766191   </td>
+<td>CALATAYUD DE CAMACHO ELVIA RAMONA y                         </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584169570616</td>
+<td>4970013   </td>
+<td>PINEDA CARMEN REGINA                                        </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584162564781</td>
+<td>7391620   </td>
+<td>MUJICA DE RODRIGUEZ SILVIA VIRGINIA                         </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166562111</td>
+<td>13843673  </td>
+<td>SEGUERI SEQUERA VICKY ANYELINA                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168595351</td>
+<td>6384527   </td>
+<td>ROJAS ACOSTA EVELIO ANTONIO                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145258228</td>
+<td>4385114   </td>
+<td>SUAREZ SANCHEZ GISELA DELFINA                               </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167517084</td>
+<td>5250731   </td>
+<td>OJEDA DE SERVITA ROSARIO COROMOTO                           </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268072980</td>
+<td>3964551   </td>
+<td>ALVARADO CLARA MARIA                                        </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514422536</td>
+<td>7448118   </td>
+<td>CASTILLO DIAZ MARCIAL MAURICIO                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584164542905</td>
+<td>5237902   </td>
+<td>MOLINARY SUAREZ NANCY MAGLENIS                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584125045635</td>
+<td>10561255  </td>
+<td>NAVAS ARIAS LIRIO HILDARIANA                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166577162</td>
+<td>7465260   </td>
+<td>FERNANDEZ PEREZ OLINDO DEJESUS                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163564582</td>
+<td>3351783   </td>
+<td>ANDASOL CAMPOS EMIRA RAMONA                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145643891</td>
+<td>7766480   </td>
+<td>GOYO CRESPO NERVIS JOSE                                     </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167520260</td>
+<td>2543346   </td>
+<td>VIRGUEZ ALVARADO BLANCA MARINA                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584125162856</td>
+<td>14563319  </td>
+<td>MOIZAN CUICA JOSE COROMOTO                                  </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512545554</td>
+<td>21299006  </td>
+<td>GONZALEZ JOSE MIGUEL                                        </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160523421</td>
+<td>9559514   </td>
+<td>TORREALBA RIVERO MIRIAN DEL CARMEN                          </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145342772</td>
+<td>9614229   </td>
+<td>OLLARVES HERNANDEZ JORGE ALEXIS                             </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512732472</td>
+<td>7396202   </td>
+<td>GOMEZ DE ALVAREZ MIZAIRA JOSEFINA                           </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582517155703</td>
+<td>7305261   </td>
+<td>ALVAREZ DE TAVERA CARMEN RAMONA                             </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266106433</td>
+<td>12938801  </td>
+<td>PINEDA ARTEAGA ELEAZAR                                      </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145276698</td>
+<td>11785443  </td>
+<td>ROA DE MEJIA  JULIETA                                       </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163500350</td>
+<td>2754098   </td>
+<td>RODRIGUEZ LAMEDA ASCENSION                                  </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584126648922</td>
+<td>13032909  </td>
+<td>ROJAS CASTELLANO NELSON JOSE                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245867028</td>
+<td>5924051   </td>
+<td>ALVAREZ GONZALEZ CHIQUINQUIRA DEL ROSARIO                   </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245688199</td>
+<td>13505149  </td>
+<td>VASQUEZ CASTILLO ALENIS JOSE                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145401789</td>
+<td>9619255   </td>
+<td>COLMENAREZ VELIZ NEILDRINA PASTORA                          </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268522141</td>
+<td>4720425   </td>
+<td>MONTES ANGEL ENRIQUE                                        </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512736655</td>
+<td>11266514  </td>
+<td>HURTADO GARCIA JUDITH JOSEFINA                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160361988</td>
+<td>14337026  </td>
+<td>ALVAREZ PARRA ZULEIMA YASMIN                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584149516695</td>
+<td>8106803   </td>
+<td>TORRES BOTELLO SEIDDRI JESUS                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+5841605993320</td>
+<td>5357155   </td>
+<td>MARTINEZ DE RODRIGUEZ ALIDA RAMONA                          </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582515114218</td>
+<td>3410853   </td>
+<td>HURTADO DE MIRELIS CARMEN TERESA                            </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584141339261</td>
+<td>17993381  </td>
+<td>PALACIO OVIEDO ADELMIS ORLANDO                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145087262</td>
+<td>7461906   </td>
+<td>COLMENAREZ LINAREZ GERARDO ANTONIO                          </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167969151</td>
+<td>7382021   </td>
+<td>PARRA VEGAS MARITZA PASTORA                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145464305</td>
+<td>11427027  </td>
+<td>YEPEZ MARIA YASMIRA                                         </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512619361</td>
+<td>7364084   </td>
+<td>RODRIGUEZ MENDOZA JAIME ARTURO                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168539629</td>
+<td>13266570  </td>
+<td>LINAREZ GUARECUCO EDUARDO JOSE                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584167502865</td>
+<td>7304456   </td>
+<td>VIVAS MARIA CRISANTA                                        </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166562297</td>
+<td>14760411  </td>
+<td>MONTAÑA PEÑA NAILETH CHAIR                                  </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584168511349</td>
+<td>3319382   </td>
+<td>MORA  ALVAREZ  GLORIA ZULAY                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267075826</td>
+<td>9603236   </td>
+<td>CORDERO AIDDA  PASTORA                                      </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268071312</td>
+<td>4375920   </td>
+<td>ESCALONA SIRA HECTOR JOSE                                   </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268086351</td>
+<td>5323892   </td>
+<td>GONZALEZ ALVAREZ ANDRES ANTONIO                             </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584269361300</td>
+<td>12934842  </td>
+<td>NUÑEZ ADAM ENDER JOSE                                       </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512637297</td>
+<td>4384108   </td>
+<td>RIVERO MENDOZA JUAN DOMINGO                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160141321</td>
+<td>13615830  </td>
+<td>VARGAS CASTRO LUZ NEIRA                                     </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245617798</td>
+<td>7389352   </td>
+<td>URES DE CASTILLO ROSA VIRGINIA                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161549733</td>
+<td>8037678   </td>
+<td>VOLCANES VOLCANES DIONELLA DEL ROSARIO                      </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245458645</td>
+<td>7906256   </td>
+<td>ESPINOZA YEPEZ NANCY DEL VALLE                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582517185986</td>
+<td>5316467   </td>
+<td>MARIN BAUDILIO AQUILES                                      </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245416174</td>
+<td>7441639   </td>
+<td>SANCHEZ FLORES LILIANA DEL CARMEN                           </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161259299</td>
+<td>13038189  </td>
+<td>TORRELLAS RODRIGUEZ DEYANIRA VICTORIA                       </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160540575</td>
+<td>5245643   </td>
+<td>ANGULO DE URDANETA ZULAY COROMOTO                           </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582512553886</td>
+<td>9629603   </td>
+<td>BRACHO FIGUEROA  ROSIMIL VIOLETA                            </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163509461</td>
+<td>12934812  </td>
+<td>VASQUEZ GALLARDO SAMIR RAMON                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584145598039</td>
+<td>15886191  </td>
+<td>REYES GALLARDO DAYANA CRISTINA                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584163156251</td>
+<td>11789392  </td>
+<td>GONZALEZ FERNANDEZ AGUEDO RAFAEL                            </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514822228</td>
+<td>7394016   </td>
+<td>SANTELIZ NAVAS ANTONIO JOSE                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584166558249</td>
+<td>7353836   </td>
+<td>LOYO DORIS CONSUELO                                         </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582517171866</td>
+<td>15351412  </td>
+<td>CASTILLO FERRER YAIDEN ANDREINA                             </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584121731495</td>
+<td>14269256  </td>
+<td>CASTILLO PEROZO LUIS ALBERTO                                </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160593360</td>
+<td>7333208   </td>
+<td>CORTEZ DANILO ANTONIO                                       </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584120502304</td>
+<td>7373658   </td>
+<td>COLMENAREZ ROSAURA                                          </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161252643</td>
+<td>13843772  </td>
+<td>MEDINA ALEJANDRO JOSE                                       </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266530423</td>
+<td>10673051  </td>
+<td>DUARTE ESCOBAR VLADILUZ                                     </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245238889</td>
+<td>19727442  </td>
+<td>CACERES ALDAZORO JOSE GREGORIO                              </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266557566</td>
+<td>11597041  </td>
+<td>ESCALONA MONTILLA YELITZA PASTORA                           </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584161534516</td>
+<td>11261325  </td>
+<td>HERNANDEZ ANNIESKA LISETT                                   </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245037227</td>
+<td>4736336   </td>
+<td>RAMIREZ ERNESTINA                                           </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584268501183</td>
+<td>11596910  </td>
+<td>TORRES RENE LEONARDO JOSE                                   </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584245170919</td>
+<td>17550355  </td>
+<td>FRIEDMAN BAUTISTA JENEIDY                                   </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267574400</td>
+<td>17698623  </td>
+<td>VILLEGAS AVILA EDIXON ALCIDES                               </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+582514431037</td>
+<td>823711    </td>
+<td>PEREZ ALMAO MARIA MAGDALENA                                 </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584160258424</td>
+<td>13786980  </td>
+<td>PINEDA DE RIVERO YERALI DEL VALLE                           </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584267588081</td>
+<td>3087683   </td>
+<td>ALVAREZ DE SIRA ELBA SANTA                                  </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr><tr>
+<td>+584266502674</td>
+<td>25147877  </td>
+<td>MERCADO ARIZA WILLIAMS                                      </td>
+<td>05-06-2010</td>
+<td>Sin Cancelar</td>
+<td>Sin Cancelar</td>
+</tr></table></body></html>

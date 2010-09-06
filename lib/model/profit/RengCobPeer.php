@@ -20,22 +20,24 @@ class RengCobPeer extends BaseRengCobPeer
     cobros.fec_cob DESC*
 
    */
-    $desde = split('/', $desde);
-    $hasta = split('/', $hasta);
+    $desde = explode('/', $desde);
+    $hasta = explode('/', $hasta);
 
 
     $c = new Criteria();
-    $c->addJoin(RengCobPeer::DOC_NUM, DocumCcPeer::NRO_DOC);
-    $c->addJoin(RengCobPeer::COB_NUM, CobrosPeer::COB_NUM);
+    $c->add(RengCobPeer::DOC_NUM,RengCobPeer::DOC_NUM.' = '.DocumCcPeer::NRO_DOC, Criteria::CUSTOM);
+    $c->add(RengCobPeer::COB_NUM, RengCobPeer::COB_NUM.' = '.CobrosPeer::COB_NUM, Criteria::CUSTOM);
 
     $c->add(DocumCcPeer::CO_CLI,$ci);
     $c->add(RengCobPeer::TP_DOC_COB,'GIRO');
     $c->add(CobrosPeer::FECCOM , CobrosPeer::FEC_COB." >= '$desde[2]-$desde[1]-$desde[0]'",Criteria::CUSTOM);
     $c->add(CobrosPeer::FEC_COB, CobrosPeer::FEC_COB." <= '$hasta[2]-$hasta[1]-$hasta[0]'",Criteria::CUSTOM);
 
-    //$c->addDescendingOrderByColumn(CobrosPeer::FEC_COB);
+    $c->addDescendingOrderByColumn(CobrosPeer::FEC_COB);
+    $result = RengCobPeer::doSelect($c);
 
-    return RengCobPeer::doSelectOne($c);
+    if($result) return $result[0];
+    else return null;
 
   }
 }

@@ -1,5 +1,5 @@
 
-<?php echo form_tag('cobranza/buscarCartas','method=get') ?>
+<?php echo form_tag('cobranza/cartas','method=get') ?>
 
 <?php echo $buscarcobros ?>
 <br>

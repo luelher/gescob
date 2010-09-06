@@ -28,8 +28,8 @@ class smsActions extends sfActions
   {
       //tipo_doc='GIRO' and saldo<>0 and fec_venc >= '2009-11-02' and fec_venc <= '2009-11-06';
 
-    $fdesde = split('/', $desde) ;
-    $fhasta = split('/', $hasta) ;
+    $fdesde = explode('/', $desde) ;
+    $fhasta = explode('/', $hasta) ;
 
     $c = new Criteria();
     $c->add(DocumCcPeer::TIPO_DOC,'GIRO');
@@ -74,40 +74,58 @@ class smsActions extends sfActions
   public function executeEnviar()
   {
     $grid = $this->getRequestParameter('grida');
+    $mensaje = $this->getRequestParameter('mensaje');
     $enviados = 0;
     $fallidos = 0;
     $enviar=true;
 
+    $opciones = OpcionesPeer::doSelectOne(new Criteria());
+    if($mensaje=='') $mensaje = $opciones->getMensaje();
+
     foreach($grid as $g)
     {
-      if($g[6]!='' || $g[7]!=''){
-        $sms = new Outbox();
-        $enviar = true;
-        if($g[6]!='') {
-          if(strlen($g[6])>10) $sms->setNumber($g[6]);
-          else $enviar=false;
-        }elseif($g[7]!='') {
-          if(strlen($g[7])>10) $sms->setNumber($g[7]);
-          else $enviar=false;
-        }else $enviar=false;
-        if($enviar){
-          $telf1 = "2329968";
-          $telf2 = "2326872";
+      if(isset($g[0])){
+        if($g[6]!='' || $g[7]!=''){
+          $sms = new Outbox();
+          $enviar = true;
+          if($g[6]!='') {
+            if(strlen($g[6])>10) $sms->setNumber($g[6]);
+            else $enviar=false;
+          }elseif($g[7]!='') {
+            if(strlen($g[7])>10) $sms->setNumber($g[7]);
+            else $enviar=false;
+          }else $enviar=false;
+          if($enviar){
+            $telf1 = "2329968";
+            $telf2 = "2326872";
+            $vencimiento = substr($g[3], 0,11);
+            $cuota = number_format($g[4],2);
+            $telfs = $telf1.'/'.$telf2;
 
-          $msj = "Saludos,Agencia Royal 33 le recuerda que el ".substr($g[3], 0,11)." vencio su cuota mensual por ".number_format($g[4],2) ."Bsf. Inf. ".$telf1.'/'.$telf2;
-          $sms->setText($msj);
-          $sms->setCoCli($g[1]);
-          $sms->setFecVenc( date('Y-m-d',strtotime(substr($g[3], 0,11))));
-          $sms->setInsertdate(date('Y-m-d H:m:s'));
-          $sms->save();
-          $enviados++;
+            $msj = $mensaje;
+
+            $msj = str_replace('[FECHAVENCIMIENTO]', $vencimiento, $msj);
+            $msj = str_replace('[TELFS]', $telfs, $msj);
+            $msj = str_replace('[CUOTA]', $cuota, $msj);
+
+            $sms->setText($msj);
+            $sms->setCoCli($g[1]);
+            $sms->setFecVenc( date('Y-m-d',strtotime(substr($g[3], 0,11))));
+            $sms->setInsertdate(date('Y-m-d H:m:s'));
+            $sms->save();
+            $enviados++;
+
+          }else $fallidos++;
         }else $fallidos++;
-      }else $fallidos++;
+      }
+
     }
 
     if($enviados>0) $this->getUser()->setFlash('notice', "Se enviaron ".$enviados." notificaciones" );
     if($fallidos>0) $this->getUser()->setFlash('error', "No se pudieron enviar ".$fallidos." notificaciones" );
 
+    $opciones->setMensaje($mensaje);
+    $opciones->save();
 
 
   }

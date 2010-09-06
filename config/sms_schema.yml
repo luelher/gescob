@@ -2,6 +2,10 @@ sms:
   _attributes:
     package: lib.model.sms
     defaultIdMethod: native
+  opciones:
+    _attributes: { phpName: Opciones }
+    mensaje: { type: VARCHAR, size: '500', required: true }
+    id: { type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
   cartas:
     _attributes: { phpName: Cartas }
     co_zon: { type: VARCHAR, size: '20', required: true }

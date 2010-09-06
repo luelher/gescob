@@ -28,8 +28,8 @@ class pagosActions extends sfActions
   {
       //tipo_doc='GIRO' and saldo<>0 and fec_venc >= '2009-11-02' and fec_venc <= '2009-11-06';
 
-    $fdesde = split('/', $desde) ;
-    $fhasta = split('/', $hasta) ;
+    $fdesde = explode('/', $desde) ;
+    $fhasta = explode('/', $hasta) ;
 
     $c = new Criteria();
     //$c->addJoin(CobrosPeer::COB_NUM, RengCobPeer::COB_NUM);

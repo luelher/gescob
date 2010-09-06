@@ -121,7 +121,7 @@ class Herramientas
     $formato="";
     $ruptura="";
       $sql = "SELECT lonniv FROM CPNIVELES where catpar='P' ORDER BY CONSEC";
-      if (Herramientas::BuscarDatos($sql,&$result))
+      if (Herramientas::BuscarDatos($sql,$result))
       {
         while ($i<count($result))
         {
@@ -755,7 +755,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
       $sql = "Select rupcat, ruppar, forpre From cpdefniv";
       $reg = CpdefnivPeer::doCount(new Criteria());
       $i=1;
-      if (Herramientas::BuscarDatos($sql,&$result))
+      if (Herramientas::BuscarDatos($sql,$result))
       {
     $categoria = $result[0]['rupcat'];
     $partidas = $result[0]['ruppar'];
@@ -782,7 +782,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
     $result=array();
     $sql = "Select rupcat, ruppar, forpre From CpDefNiv";
     $i=1;
-    if (Herramientas::BuscarDatos($sql,&$result))
+    if (Herramientas::BuscarDatos($sql,$result))
     {
       $categoria = $result[0]['rupcat'];
       $partidas = $result[0]['ruppar'];
@@ -862,7 +862,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
       $result=array();
       $sql = "Select rupcat, ruppar, forpre From CpDefNiv";
       $i=1;
-      if (Herramientas::BuscarDatos($sql,&$result))
+      if (Herramientas::BuscarDatos($sql,$result))
       {
        $categoria = $result[0]['rupcat'];
        $partidas = $result[0]['ruppar'];
@@ -969,7 +969,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
     $result=array();
     $sql = "Select rupcat, ruppar, forpre From ForDefNiv";
     $i=1;
-    if (Herramientas::BuscarDatos($sql,&$result))
+    if (Herramientas::BuscarDatos($sql,$result))
     {
       $categoria = $result[0]['rupcat'];
       $partidas = $result[0]['ruppar'];
@@ -991,7 +991,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
   {
     $result=array();
     $i=0;
-    if (Herramientas::BuscarDatos($sql,&$result))
+    if (Herramientas::BuscarDatos($sql,$result))
     {
       $mascara='';
       while ($i<count($result))
@@ -1108,7 +1108,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
     $result=array();
   $sql = "Select rupcat, ruppar, forpre From CpDefNiv";
   $i=1;
-  if (Herramientas::BuscarDatos($sql,&$result))
+  if (Herramientas::BuscarDatos($sql,$result))
   {
     $categoria = $result[0]['rupcat'];
     $partidas = $result[0]['ruppar'];
@@ -1246,7 +1246,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
 
          if (is_array($objmod))
          {
-     self::recorrerArreglo($objmod,&$mod);
+     self::recorrerArreglo($objmod,$mod);
          }
          else
        {
@@ -1262,14 +1262,14 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
     $result=array();
     $j=0;
   $sql = "Select Distinct(gracar) as gracar from NPComOcp where CodTipCar='".$codtipcar."' and Fecdes='".$fecdes."'";
-    if (Herramientas::BuscarDatos($sql,&$result))
+    if (Herramientas::BuscarDatos($sql,$result))
     {
       while ($j<count($result))
       {
           $result2=array();
           $i=0;
         $sql2 = "Select pascar,suecar from Npcomocp where CodTipCar='".$codtipcar."' and Fecdes='".$fecdes."' and gracar='".$result[$j]['gracar']."' order by pascar asc";
-          if (Herramientas::BuscarDatos($sql2,&$result2))
+          if (Herramientas::BuscarDatos($sql2,$result2))
           {
             while ($i<count($result2))
             {
@@ -1400,9 +1400,9 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
       $puntero=$valor;
       $result=array();
        $sql = "select * from ".$tabla." where substr(".$campocom.",3,6)='".substr($valor,2,6)."'";
-      if (Herramientas::BuscarDatos($sql,&$result))
+      if (Herramientas::BuscarDatos($sql,$result))
       {
-        if (Herramientas::getVerCorrelativo($campocorr,$tblcorr,&$r))//buscamos el correlastivo
+        if (Herramientas::getVerCorrelativo($campocorr,$tblcorr,$r))//buscamos el correlastivo
                $puntero=$r;
           else
             $puntero=0;
@@ -1411,7 +1411,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
         {
           $valor=str_pad($puntero, strlen($valor), '0', STR_PAD_LEFT);
           $sql1 = "select * from ".$tabla." where substr(".$campocom.",3,6)='".substr($valor,2,6)."'";
-          if (Herramientas::BuscarDatos($sql1,&$result1))
+          if (Herramientas::BuscarDatos($sql1,$result1))
           {
             $seguir=true;
             $puntero++;
@@ -1438,9 +1438,9 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
       $puntero=$valor;
       $result=array();
        $sql = "select * from ".$tabla." where $campocom='".$valor."'";
-      if (Herramientas::BuscarDatos($sql,&$result))
+      if (Herramientas::BuscarDatos($sql,$result))
       {
-        if (Herramientas::getVerCorrelativo($campocorr,$tblcorr,&$r))//buscamos el correlastivo
+        if (Herramientas::getVerCorrelativo($campocorr,$tblcorr,$r))//buscamos el correlastivo
                $puntero=$r;
           else
             $puntero=0;
@@ -1449,7 +1449,7 @@ public static function CargarDatosGrid(&$form,$obj,$arreglo = false)
         {
           $valor=str_pad($puntero, strlen($valor), '0', STR_PAD_LEFT);
           $sql1 = "select * from ".$tabla." where $campocom='".$valor."'";
-          if (Herramientas::BuscarDatos($sql1,&$result1))
+          if (Herramientas::BuscarDatos($sql1,$result1))
           {
             $seguir=true;
             $puntero++;
@@ -1850,7 +1850,7 @@ public static function obtenerDiaMesOAno($fecha,$formato,$dmoa)
       coalesce(obtener_ejecucion(rtrim(codpre),'01','12','".$ano."','DIS'),0) -
       coalesce(obtener_ejecucion(rtrim(codpre),'01','12','".$ano."','PRC'),0)) as mondis
       from cpasiini where CodPre = '".$codigo."' and anopre='".$ano."' and perpre='00'";
-      if (Herramientas::BuscarDatos($sql,&$result))
+      if (Herramientas::BuscarDatos($sql,$result))
       {
     if ($result[0]['mondis']!='')
     {
@@ -1871,12 +1871,12 @@ public static function obtenerDiaMesOAno($fecha,$formato,$dmoa)
      $montodisponible=0;
     $result=array();
     $sql = "SELECT feccie FROM CPDEFNIV WHERE CODEMP='001'";
-    if (Herramientas::BuscarDatos($sql,&$result))
+    if (Herramientas::BuscarDatos($sql,$result))
     {
       $ano=substr(str_replace("'","",$result[0]['feccie']), 0, 4);
       $resul2 = array ();
       $sql1 = "SELECT nomabr FROM CPNIVELES ORDER BY CONSEC";
-      if (Herramientas::BuscarDatos($sql1, & $resul2))
+      if (Herramientas::BuscarDatos($sql1, $resul2))
       {
         $longitud = 0;
         for ($a = 0; $a < count($resul2); $a++)
@@ -1885,7 +1885,7 @@ public static function obtenerDiaMesOAno($fecha,$formato,$dmoa)
         }
       $longitud = $longitud -1;
         $var = substr($codigo, 0, $longitud);
-    if (Herramientas::Monto_disponible_ejecucion($ano,$var,&$mondis))
+    if (Herramientas::Monto_disponible_ejecucion($ano,$var,$mondis))
       $montodisponible=$mondis;
       }
     }
@@ -2043,7 +2043,7 @@ public static function obtenerDiaMesOAno($fecha,$formato,$dmoa)
 
     $sql="SELECT nextval('".$seq."') as val;";
 
-    if(Herramientas::BuscarDatos($sql,&$result)){
+    if(Herramientas::BuscarDatos($sql,$result)){
       return $result[0]['val'];
     }else return 0;
 
@@ -2157,7 +2157,7 @@ public static function obtenerDiaMesOAno($fecha,$formato,$dmoa)
       	coalesce(obtener_ejecucion(rtrim(codpre),'".$fecini."','".$feccie."','".$ano."','DIS'),0) -
       	coalesce(obtener_ejecucion(rtrim(codpre),'".$fecini."','".$feccie."','".$ano."','PRC'),0)) as mondis
       	from cpasiini where codpre like '".$codigo."' and anopre='".$ano."' and perpre='".$perpre."';";
-      	if (Herramientas::BuscarDatos($sql,&$result)) {
+      	if (Herramientas::BuscarDatos($sql,$result)) {
     		if ($result[0]['mondis']!='') {
       			$mondis=$result[0]['mondis'];
 		    }

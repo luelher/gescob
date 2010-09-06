@@ -16,19 +16,53 @@ class cobranzaActions extends sfActions
 
   public function executeSms(sfWebRequest $request)
   {
+    $desde = $request->getParameter('fecha_desde', date('d/m/Y',strtotime(H::AddDaysDate(date('Y-m-d'), 0))));
 
-    $desde = H::AddDaysDate(date('Y-m-d'), 0);
-    $desde = date('d/m/Y',strtotime($desde));
-    //$this->configGridSms($desde, $desde);
+    $hasta = $request->getParameter('fecha_hasta', date('d/m/Y',strtotime($desde)));
+
+    $this->configGridSms($desde, $hasta);
 
   }
 
   public function executeCartas(sfWebRequest $request)
   {
 
-    $desde = H::AddDaysDate(date('Y-m-d'), 0);
-    $desde = date('d/m/Y',strtotime($desde));
+    $desde = $request->getParameter('fecha_desde', date('d/m/Y',strtotime(H::AddDaysDate(date('Y-m-d'), 0))));
+
+    $hasta = $request->getParameter('fecha_hasta', date('d/m/Y',strtotime($desde)));
+
     $this->configGridCartas($desde, $desde, '');
+
+  }
+
+  public function configGridSms($desde, $hasta)
+  {
+      //tipo_doc='GIRO' and saldo<>0 and fec_venc >= '2009-11-02' and fec_venc <= '2009-11-06';
+
+    $fdesde = explode('/', $desde) ;
+    $fhasta = explode('/', $hasta) ;
+
+    $c = new Criteria();
+    $c->add(OutboxPeer::CO_CLI,'',Criteria::NOT_EQUAL);
+    $c->add(OutboxPeer::PROCESSED ,true);
+    $c->add(OutboxPeer::PROCESSED_DATE ,OutboxPeer::PROCESSED_DATE." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
+    $c->add(OutboxPeer::NOT_BEFORE,OutboxPeer::PROCESSED_DATE." <= '$fhasta[2]-$fhasta[1]-$fhasta[0]'",Criteria::CUSTOM);
+    $c->addAscendingOrderByColumn(OutboxPeer::PROCESSED_DATE );
+
+    //$c->setLimit(20);
+
+    $reg = OutboxPeer::doSelect($c);
+
+    $this->desde = $desde;
+
+    $this->hasta = $hasta;
+
+
+    $this->buscarsms = new buscarMororosForm(array('fecha_desde' => $desde, 'fecha_hasta' => $hasta));
+
+    $this->detallecobros = new detalleMorososForm(array(),array('per' => $reg, 'config' => 'grid_sms'));
+
+    //H::PrintR($this->detallesms);
 
   }
 
@@ -36,8 +70,8 @@ class cobranzaActions extends sfActions
   {
       //tipo_doc='GIRO' and saldo<>0 and fec_venc >= '2009-11-02' and fec_venc <= '2009-11-06';
 
-    $fdesde = split('/', $desde) ;
-    $fhasta = split('/', $hasta) ;
+    $fdesde = explode('/', $desde) ;
+    $fhasta = explode('/', $hasta) ;
 
     $c = new Criteria();
     $c->add(CartasPeer::ENTREGADO ,CartasPeer::ENTREGADO." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
@@ -52,7 +86,8 @@ class cobranzaActions extends sfActions
 
     //$this->obj = H::getConfigGrid("grid_documcc",$reg);
     $this->desde = $desde;
-    $this->hasta = $hasta;
+ 
+   $this->hasta = $hasta;
 
 
     $this->buscarcobros = new buscarCartasForm(array('fecha_desde' => $desde, 'fecha_hasta' => $hasta));

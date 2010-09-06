@@ -105,7 +105,7 @@ class Columna
    */
   public function setNombreCampo($val){ // $campos
     $x = array();
-    $x=split('_',$val);
+    $x=explode('_',$val);
     $i=0;
     $this->field="";
     while ($i<count($x)){

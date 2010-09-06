@@ -4,6 +4,8 @@ class Outbox extends BaseOutbox
 {
 
   protected $enviar = true;
+  protected $pago = null;
+  protected $cliente = null;
 
   public function setNumber($val)
   {
@@ -13,20 +15,24 @@ class Outbox extends BaseOutbox
 
   public function getCodCli()
   {
-    $c = new Criteria();
-    $c->add(ClientesPeer::CO_CLI,$this->co_cli);
-    $cliente = ClientesPeer::doSelectOne($c);
-    if($cliente) return $cliente->getCoCli();
+    if(!$this->cliente){
+      $c = new Criteria();
+      $c->add(ClientesPeer::CO_CLI,$this->co_cli);
+      $this->cliente = ClientesPeer::doSelectOne($c);
+    }
+    if($this->cliente) return $this->cliente->getCoCli();
     else return 'SIN COD. CLI.';
 
   }
 
   public function getCliDes()
   {
-    $c = new Criteria();
-    $c->add(ClientesPeer::CO_CLI,$this->co_cli);
-    $cliente = ClientesPeer::doSelectOne($c);
-    if($cliente) return $cliente->getCliDes();
+    if(!$this->cliente){
+      $c = new Criteria();
+      $c->add(ClientesPeer::CO_CLI,$this->co_cli);
+      $this->cliente = ClientesPeer::doSelectOne($c);
+    }
+    if($this->cliente) return $this->cliente->getCliDes();
     else return 'SIN NOM. CLI.';
 
   }
@@ -61,5 +67,30 @@ class Outbox extends BaseOutbox
   {
     return $this->getFecVenc('d-m-Y');
   }
+
+  public function getFecPago() {
+
+    if(!$this->pago) $this->pago = RengCobPeer::getCobranza($this->co_cli, $this->getProcessedDate('d/m/Y') , date('d/m/Y'));
+
+    if($this->pago) {
+      $cobro = $this->pago->getCobros();
+      if($cobro) return $cobro->getFecCob();
+      else return 'Sin Cancelar';
+    }else return 'Sin Cancelar';
+
+  }
+
+  public function getCanPago() {
+
+    if(!$this->pago) $this->pago = RengCobPeer::getCobranza($this->co_cli, $this->getProcessedDate('d/m/Y') , date('d/m/Y'));
+
+    if($this->pago) {
+      $cobro = $this->pago->getCobros();
+      if($cobro) return $cobro->getMonto();
+      else return 'Sin Cancelar';
+    }else return 'Sin Cancelar';
+
+  }
+
 
 }
