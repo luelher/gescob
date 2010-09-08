@@ -31,7 +31,8 @@
               <li><a href="<?php echo url_for('vencimientos/index') ?>">Vencimiento</a></li>
               <li><a href="<?php echo url_for('pagos/index') ?>">Pagos</a></li>
               <li><a href="<?php echo url_for('cartas/index') ?>">Cartas Entregadas</a></li>
-              <li class="last"><a href="<?php echo url_for('cobranza/index') ?>">Cobranza</a></li>
+              <li ><a href="<?php echo url_for('cobranza/index') ?>">Cobranza</a></li>
+              <li class="last"><a href="<?php echo url_for('mantenimiento/index') ?>">Mantenimiento</a></li>
             </ul>
             </div>
           </div>
