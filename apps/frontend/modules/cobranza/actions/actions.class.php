@@ -16,9 +16,9 @@ class cobranzaActions extends sfActions
 
   public function executeSms(sfWebRequest $request)
   {
-    $desde = $request->getParameter('fecha_desde', date('d/m/Y',strtotime(H::AddDaysDate(date('Y-m-d'), 0))));
+    $desde = $request->getParameter('fecha_desde', date('d/m/Y'));
 
-    $hasta = $request->getParameter('fecha_hasta', date('d/m/Y',strtotime($desde)));
+    $hasta = $request->getParameter('fecha_hasta', date('d/m/Y'));
 
     $this->configGridSms($desde, $hasta);
 
@@ -27,11 +27,13 @@ class cobranzaActions extends sfActions
   public function executeCartas(sfWebRequest $request)
   {
 
-    $desde = $request->getParameter('fecha_desde', date('d/m/Y',strtotime(H::AddDaysDate(date('Y-m-d'), 0))));
+    $desde = $request->getParameter('fecha_desde', date('d/m/Y'));
 
-    $hasta = $request->getParameter('fecha_hasta', date('d/m/Y',strtotime($desde)));
+    $hasta = $request->getParameter('fecha_hasta', date('d/m/Y'));
 
-    $this->configGridCartas($desde, $desde, '');
+    $zona = $request->getParameter('zona', '');
+
+    $this->configGridCartas($desde, $hasta, $zona);
 
   }
 
