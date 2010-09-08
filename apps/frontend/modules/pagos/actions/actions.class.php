@@ -113,6 +113,7 @@ class pagosActions extends sfActions
 <td>Nombre</td>
 <td>Fecha Vencimiento</td>
 <td>Fecha Pago</td>
+<td>Dias sin Pagar</td>
 <td>Monto Pagado</td>
 <td>Observacion</td>
 </tr>");
@@ -128,6 +129,7 @@ class pagosActions extends sfActions
 <td>".$g[4]."</td>
 <td>".$g[5]."</td>
 <td>".$g[6]."</td>
+<td>".$g[7]."</td>
 </tr>");
         $enviados++;
       }else $fallidos++;
