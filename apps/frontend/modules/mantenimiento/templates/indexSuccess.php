@@ -11,6 +11,4 @@
 <h2>Estado del Servicio SMS</h2>
 <p>Servicio: <?php if(exec('ps -A | grep smsd')!='') echo '<span style="color: green"> Iniciado </span>'; else echo '<span style="color: red"> Apagado </span>'; ?> </p>
 <br>
-<br>
-<?php echo link_to('Reiniciar Servicio SMS', 'mantenimiento/reiniciar'); ?>
-<br>
+
