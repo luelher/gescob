@@ -61,10 +61,10 @@ class Cobros extends BaseCobros
 
   public function getDiasmora()
   {
-    $segundos_diferencia = strtotime(parent::getFecCob('d-m-Y')) - strtotime($this->getFecVenc());
+    $segundos_diferencia = strtotime(date('d-m-Y')) - strtotime($this->getFecVenc());
 
-    return ($segundos_diferencia / (60 * 60 * 24));
-
+    $dias = ($segundos_diferencia / (60 * 60 * 24));
+    return $dias < 0 ? 0 : $dias;
 
   }
 
