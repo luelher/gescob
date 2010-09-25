@@ -61,10 +61,27 @@ class Cobros extends BaseCobros
 
   public function getDiasmora()
   {
-    $segundos_diferencia = strtotime(date('d-m-Y')) - strtotime($this->getFecCob());
 
+    $c = new Criteria();
+    $c->add(CobrosPeer::MONTO,0,Criteria::NOT_EQUAL);
+    $c->add(CobrosPeer::ANULADO,false);
+    $c->add(CobrosPeer::CO_CLI,$this->getCoCli());
+
+    $c->addDescendingOrderByColumn(CobrosPeer::FEC_COB);
+    $c->setLimit(2);
+    $reg = CobrosPeer::doSelect($c);
+
+    if(count($reg)==2){
+      $cobant = $reg[1];
+    }else{
+      $cobant = $this;
+    }
+
+    $segundos_diferencia = (strtotime($this->getFecCob()) - strtotime($cobant->getFecCob()));
+
+    
     $dias = ($segundos_diferencia / (60 * 60 * 24));
-    return $dias < 0 ? 0 : $dias;
+    return $dias;
 
   }
 
