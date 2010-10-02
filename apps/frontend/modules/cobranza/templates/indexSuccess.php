@@ -7,3 +7,9 @@
 <br>
 <br>
 <?php echo link_to('Por Mensajes (SMS) entregados', 'cobranza/sms'); ?>
+<br>
+<br>
+<h1>Pagos</h1>
+<br>
+<br>
+<?php echo link_to('Frecuencia de Pagos por Cliente', 'cobranza/frecuencia'); ?>
