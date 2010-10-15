@@ -100,8 +100,12 @@ class cobranzaActions extends sfActions
 
   }
 
-  public function configGridFrecuencia($desde, $hasta)
+  public function configGridFrecuencia($desde, $hasta, $fhasta)
   {
+    if(!$fhasta) $fhasta = date('d/m/Y');
+    $fechah = explode('/', $fhasta);
+    $fecha = "$fechah[2]-$fechah[1]-$fechah[0]";
+
     if($desde==0 && $hasta==0) $top = 'top 0';
     else $top='';
 
@@ -110,16 +114,17 @@ class cobranzaActions extends sfActions
         from
           (
             select
-              f.co_cli as cocli,
-              f.cli_des as clides,
+              i.co_cli as cocli,
+              i.cli_des as clides,
               (
                 select
                 DATEDIFF(DAY,
-                (select top 1 a.fec_cob as ultimo from (select top (2) fec_cob from cobros where co_cli=f.co_cli order by	fec_cob desc) a order by a.fec_cob asc),
-                (select top 1 a.fec_cob as ultimo from (select top (2) fec_cob from cobros where co_cli=f.co_cli order by	fec_cob desc) a))
-              ) as dias
+                (select top 1 a.fec_cob as ultimo from (select top (2) fec_cob from cobros where co_cli=i.co_cli and fec_cob <= '$fecha' order by	fec_cob desc) a order by a.fec_cob asc),
+                (select top 1 a.fec_cob as ultimo from (select top (2) fec_cob from cobros where co_cli=i.co_cli and fec_cob <= '$fecha' order by	fec_cob desc) a))
+              ) as dias,
+              (select top 1 fec_cob from cobros where co_cli=i.co_cli and monto<>0 and anulado=0 order by fec_cob desc) as feccob
             from
-              clientes f
+              clientes i
           ) g
         where g.dias >= $desde and g.dias <= $hasta
         order by
@@ -138,25 +143,8 @@ class cobranzaActions extends sfActions
       $result[] = $info;
     }
 
-    //$c = new Criteria();
-    //$c->add(CartasPeer::ENTREGADO ,CartasPeer::ENTREGADO." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
-    //$c->add(CartasPeer::CO_CLI,CartasPeer::ENTREGADO." <= '$fhasta[2]-$fhasta[1]-$fhasta[0]'",Criteria::CUSTOM);
-    //$c->add(CartasPeer::CO_ZON,$zona);
-    //$c->addAscendingOrderByColumn(CartasPeer::ENTREGADO);
 
-    //$c->setLimit(20);
-
-    //$reg = ClientesPeer::doSelect($c);
-    //$reg = CobrosPeer::doSelect($c);
-
-    //$this->obj = H::getConfigGrid("grid_documcc",$reg);
-    //$this->desde = $desde;
-
-    //$this->hasta = $hasta;
-
-    //H::PrintR($result);
-    
-    $this->buscarpagos = new buscarFrecuenciaPagoForm(array('dias_desde' => $desde, 'dias_hasta' => $hasta));
+    $this->buscarpagos = new buscarFrecuenciaPagoForm(array('dias_desde' => $desde, 'dias_hasta' => $hasta, 'fecha_hasta' => $fecha));
 
     $this->detallepagos = new detalleFrecuenciaPagosForm(array(),array('per' => $result, 'config' => 'grid_cobro'));
 
@@ -189,9 +177,26 @@ class cobranzaActions extends sfActions
 
     $hasta = $request->getParameter('dias_hasta', 0);
 
-    $this->configGridFrecuencia($desde, $hasta);
+    $fecha = $request->getParameter('fecha_hasta');
+
+    $this->configGridFrecuencia($desde, $hasta, $fecha);
 
   }
+
+  public function executeDetallepagos(sfWebRequest $request)
+  {
+    $ci = $request->getParameter('ci', 0);
+
+    $c = new Criteria();
+    $c->add(CobrosPeer::CO_CLI,$ci);
+    $c->addDescendingOrderByColumn(CobrosPeer::FEC_COB);
+
+    $per = CobrosPeer::doSelect($c);
+
+    $this->detallepagos = new detalleFrecuenciaPagosForm(array(),array('per' => $per, 'config' => 'grid_detcob'));
+
+  }
+
 
   public function executeExportar()
   {
@@ -296,6 +301,7 @@ class cobranzaActions extends sfActions
     fputs($ar,"<tr>
 <td>Cedula Cliente</td>
 <td>Nombre Cliente</td>
+<td>Fecha Pago</td>
 <td>Dias Sin Cancelar</td>
 </tr>");
 
@@ -307,6 +313,7 @@ class cobranzaActions extends sfActions
 <td>".$g[1]."</td>
 <td>".$g[2]."</td>
 <td>".$g[3]."</td>
+<td>".$g[4]."</td>
 </tr>");
         $enviados++;
       }else $fallidos++;

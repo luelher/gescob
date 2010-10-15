@@ -40,16 +40,13 @@ class Herramientas
   {
 
     $con = Propel::getConnection($bd);
-    $stmt = $con->createStatement();
-    $rs = $stmt->executeQuery($sql, ResultSet::FETCHMODE_ASSOC);
+    $stmt = $con->prepare($sql);
+    $stmt->execute();
 
-    $output = array();
+    $output = new ArrayObject();
+    while($resultset = $stmt->fetch(PDO::FETCH_ASSOC))
+      $output[] = $resultset;
 
-    while ($rs->next())
-    {
-      $fila = $rs->getRow();
-      $output[] = $fila;
-    }
     if (count($output)>0) return true; else return false;
   }
 

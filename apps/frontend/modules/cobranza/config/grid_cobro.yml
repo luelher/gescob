@@ -23,24 +23,24 @@ opciones:                  # Opciones generales
   tipo:                    t
   nombrecampo:             clides
   html:                    [size="25" readonly=true ]
-#5:       # Columna 5
-#  titulo:                  Fecha Pago
-#  tipo:                    t
-#  nombrecampo:             fec_cob
-#  html:                    [size="8" readonly=true ]
-4:       # Columna 6
+4:       # Columna 5
+  titulo:                  Fecha Pago
+  tipo:                    t
+  nombrecampo:             feccob
+  html:                    [size="8" readonly=true ]
+5:       # Columna 6
   titulo:                  Dias sin Pagar
   tipo:                    m
   nombrecampo:             dias
   html:                    [size="6" readonly=true ]
   estotal:                 [true, totalp]
-5:       # Columna 4
+6:       # Columna 4
   titulo:                  detalle
   tipo:                    t
   nombrecampo:             xxx
   html:                    [size="1" readonly=true ]
   boton:                   true
-  enlaceboton:             alert('En Desarrollo')
+  enlaceboton:             detalle(this.id)
 #7:       # Columna 6
 #  titulo:                  Monto Pagado
 #  tipo:                    m

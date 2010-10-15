@@ -1,51 +1,40 @@
 opciones:                  # Opciones generales
   eliminar:                false
   tabla:                   cobro
-  anchogrid:               800
-  ancho:                   600
+  anchogrid:               600
+  ancho:                   580
   filas:                   0
   titulo:                  ' '
   htmltotalfilas:          ' '
-1:       # Columna 1
-  titulo:                  Enviar
-  tipo:                    k
-  nombrecampo:             enviar
-  html:                    [size="5" ]
+1:       # Columna 3
+  titulo:                  Nro. Pago
+  tipo:                    t
+  nombrecampo:             cob_num
+  html:                    [size="6" readonly=true ]
   esgrabable:              true
 2:       # Columna 3
   titulo:                  Cedula Cliente
   tipo:                    t
-  nombrecampo:             cocli
+  nombrecampo:             co_cli
   html:                    [size="6" readonly=true ]
   esgrabable:              true
-3:       # Columna 4
+3:       # Columna 3
   titulo:                  Nombre
   tipo:                    t
-  nombrecampo:             nomcli
+  nombrecampo:             nom_cli
   html:                    [size="25" readonly=true ]
-4:       # Columna 7
-  titulo:                  Fecha vencimiento
-  tipo:                    t
-  nombrecampo:             fecvenc
-  html:                    [size="9" readonly=true ]
-5:       # Columna 5
+4:       # Columna 5
   titulo:                  Fecha Pago
   tipo:                    t
-  nombrecampo:             feccob
-  html:                    [size="9" readonly=true ]
-6:       # Columna 6
-  titulo:                  Dias sin Pagar
-  tipo:                    m
-  nombrecampo:             diasmora
-  html:                    [size="6" readonly=true ]
-  estotal:                 [true, totalp]
-7:       # Columna 6
+  nombrecampo:             fec_cob
+  html:                    [size="8" readonly=true ]
+5:       # Columna 6
   titulo:                  Monto Pagado
   tipo:                    m
   nombrecampo:             monto
   html:                    [size="6" readonly=true ]
   estotal:                 [true, totalp]
-8:       # Columna 7
+6:       # Columna 7
   titulo:                  Observacion
   tipo:                    t
   nombrecampo:             observa

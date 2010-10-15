@@ -26,54 +26,47 @@ class pagosActions extends sfActions
 
   public function configGrid($desde, $hasta)
   {
-      //tipo_doc='GIRO' and saldo<>0 and fec_venc >= '2009-11-02' and fec_venc <= '2009-11-06';
 
-    $fdesde = explode('/', $desde) ;
-    $fhasta = explode('/', $hasta) ;
+    $fdesde = explode('/', $desde);
+    $fhasta = explode('/', $hasta);
 
-    $c = new Criteria();
-    //$c->addJoin(CobrosPeer::COB_NUM, RengCobPeer::COB_NUM);
-    //$c->addJoin(DocumCcPeer::NRO_DOC, RengCobPeer::DOC_NUM);
+    $fd = "$fdesde[2]-$fdesde[1]-$fdesde[0]";
+    $fh = "$fhasta[2]-$fhasta[1]-$fhasta[0]";
 
+    $reg = array();
 
-    //$c->add(DocumCcPeer::TIPO_DOC,'GIRO');
-//    $c->add(DocumCcPeer::SALDO,0);
-    $c->add(CobrosPeer::MONTO,0,Criteria::NOT_EQUAL);
-    $c->add(CobrosPeer::ANULADO,false);
-    //$c->add(CobrosPeer::OBSERVA,'%GIRO%',Criteria::LIKE);
+    $sql = "
+      select
+        1 as id,
+        '1' as enviar,
+        i.cli_des as nomcli,
+        i.co_cli as cocli,
+        h.fec_venc as fecvenc,
+        f.fec_cob as feccob,
+        f.monto,
+        (
+          select
+          DATEDIFF(DAY,
+          (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and zz.tipo_doc='GIRO' and zz.nro_orig=h.nro_orig and xx.cob_num <> f.cob_num order by	fec_cob desc) a order by a.fec_cob asc),
+          (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and zz.tipo_doc='GIRO' and zz.nro_orig=h.nro_orig order by	fec_cob desc) a))
+        ) as diasmora,
+        h.observa
+      from
+        (cobros f inner join clientes i on f.co_cli=i.co_cli) inner join (reng_cob g inner join docum_cc h on g.doc_num=h.nro_doc ) on f.cob_num=g.cob_num
+      where
+        f.fec_cob >= '$fd' and f.fec_cob <= '$fh' and f.anulado=0 and f.monto<>0
+      order by
+        f.fec_cob asc
+      ";
 
-    $c->add(CobrosPeer::FEC_COB,CobrosPeer::FEC_COB." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
-    $c->add(CobrosPeer::FECCOM,CobrosPeer::FEC_COB." <= '$fhasta[2]-$fhasta[1]-$fhasta[0]'",Criteria::CUSTOM);
+    H::BuscarDatos(CobrosPeer::DATABASE_NAME, $sql, $reg);
 
-    //$c->add(RengCobPeer::COB_NUM, CobrosPeer::COB_NUM.'='.RengCobPeer::COB_NUM,Criteria::CUSTOM);
-    //$c->add(DocumCcPeer::NRO_DOC, RengCobPeer::DOC_NUM.'='.DocumCcPeer::NRO_DOC,Criteria::CUSTOM);
-
-    $c->addAscendingOrderByColumn(CobrosPeer::FEC_COB);
-    //$c->setDistinct();
-
-
-    //$c->setLimit(200);
-
-    //$reg = ClientesPeer::doSelect($c);
-    $reg = CobrosPeer::doSelect($c);
-//    $regaux = array();
-//    foreach ($reg as $i => $cli){
-//      $c = new Criteria();
-//      $c->add(OutboxPeer::FEC_VENC,"$fdesde[2]-$fdesde[1]-$fdesde[0]");
-//      $c->add(OutboxPeer::CO_CLI,$cli->getCoCli());
-//      $outbox = OutboxPeer::doSelectOne($c);
-//      if(!$outbox) $regaux[] = $cli;
-//    }
-
-    //$this->obj = H::getConfigGrid("grid_documcc",$reg);
     $this->desde = $desde;
     $this->hasta = $hasta;
 
     $this->buscarsms = new buscarMororosForm(array('fecha_desde' => $desde, 'fecha_hasta' => $hasta));
 
     $this->detallesms = new detalleMorososForm(array(),array('per' => $reg, 'config' => 'grid_cobro'));
-
-    //H::PrintR($this->detallesms);
 
   }
 
