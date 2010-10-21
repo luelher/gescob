@@ -62,27 +62,36 @@ class Cobros extends BaseCobros
   public function getDiasmora()
   {
 
-    $c = new Criteria();
-    $c->add(CobrosPeer::MONTO,0,Criteria::NOT_EQUAL);
-    $c->add(CobrosPeer::ANULADO,false);
-    $c->add(CobrosPeer::CO_CLI,$this->getCoCli());
+    $rengcob = $this->getRengCob();
+    if(!$this->documcc) $this->documcc = $rengcob->getDocumCc();
+    if($this->documcc) $nrofac = $documcc->getNroOrig();
+    else $nrofac = '';
 
-    $c->addDescendingOrderByColumn(CobrosPeer::FEC_COB);
-    $c->setLimit(2);
-    $reg = CobrosPeer::doSelect($c);
+    $cocli = $this->getCoCli();
 
-    if(count($reg)==2){
-      $cobant = $reg[1];
-    }else{
-      $cobant = $this;
-    }
+    $sql = "
+      select
+        f.co_cli as cocli,
+        f.cli_des as clides,
+        (
+          select
+          DATEDIFF(DAY,
+          (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and zz.tipo_doc='GIRO' and zz.nro_orig='$nrofac' order by	fec_cob desc) a order by a.fec_cob asc),
+          (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and zz.tipo_doc='GIRO' and zz.nro_orig='$nrofac' order by	fec_cob desc) a))
+        ) as dias
+      from
+        clientes f
+      where
+        f.co_cli='$cocli'
+    ";
 
-    $segundos_diferencia = (strtotime($this->getFecCob()) - strtotime($cobant->getFecCob()));
+    $dias = 0;
 
-    
-    $dias = ($segundos_diferencia / (60 * 60 * 24));
+    H::BuscarDatos(CobrosPeer::DATABASE_NAME, $sql, $dias);
+
     return $dias;
 
   }
 
 }
+
