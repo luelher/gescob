@@ -16,7 +16,6 @@ class detalleMorososForm extends sfForm {
     $cocli='';
     foreach ($per as $p){
       $cocli = $p['cocli'];
-      print $cocli;
       if($cocliant!=$cocli){
         $cantcli++;
         $cocliant=$cocli;
