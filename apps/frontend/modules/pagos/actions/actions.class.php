@@ -41,9 +41,9 @@ class pagosActions extends sfActions
         '1' as enviar,
         i.cli_des as nomcli,
         i.co_cli as cocli,
-        h.fec_venc as fecvenc,
-        f.fec_cob as feccob,
-        f.monto,
+        (SELECT CONVERT(VARCHAR(10), h.fec_venc, 103) AS [DD/MM/YYYY]) as fecvenc,
+        (SELECT CONVERT(VARCHAR(10), f.fec_cob, 103) AS [DD/MM/YYYY]) as feccob,
+        (select CONVERT(VARCHAR,g.neto,1)) as monto,
         (
           select
           DATEDIFF(DAY,
