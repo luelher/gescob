@@ -121,7 +121,7 @@ class pagosActions extends sfActions
 <td>".$g[3]."</td>
 <td>".$g[4]."</td>
 <td>".$g[5]."</td>
-<td>".$g[6]."</td>
+<td>".number_format($g[6],2,',','.') ."</td>
 <td>".$g[7]."</td>
 </tr>");
         $enviados++;
