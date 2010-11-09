@@ -56,7 +56,7 @@ class pagosActions extends sfActions
       where
         f.fec_cob >= '$fd' and f.fec_cob <= '$fh' and f.anulado=0 and f.monto<>0 and h.co_cli=i.co_cli
       order by
-        f.fec_cob asc
+        f.fec_cob asc, i.co_cli
       ";
 
     H::BuscarDatos(CobrosPeer::DATABASE_NAME, $sql, $reg);
