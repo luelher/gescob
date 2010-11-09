@@ -44,17 +44,17 @@ class pagosActions extends sfActions
         (SELECT CONVERT(VARCHAR(10), h.fec_venc, 103) AS [DD/MM/YYYY]) as fecvenc,
         (SELECT CONVERT(VARCHAR(10), f.fec_cob, 103) AS [DD/MM/YYYY]) as feccob,
         (select CONVERT(VARCHAR,g.neto,1)) as monto,
-        (
+        COALESCE((
           select
           DATEDIFF(DAY,
           (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and zz.tipo_doc='GIRO' and zz.nro_orig=h.nro_orig and xx.cob_num <> f.cob_num order by	fec_cob desc) a order by a.fec_cob asc),
           (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and zz.tipo_doc='GIRO' and zz.nro_orig=h.nro_orig order by	fec_cob desc) a))
-        ) as diasmora,
+        ),0) as diasmora,
         h.observa
       from
         (cobros f inner join clientes i on f.co_cli=i.co_cli) inner join (reng_cob g inner join docum_cc h on g.doc_num=h.nro_doc ) on f.cob_num=g.cob_num
       where
-        f.fec_cob >= '$fd' and f.fec_cob <= '$fh' and f.anulado=0 and f.monto<>0
+        f.fec_cob >= '$fd' and f.fec_cob <= '$fh' and f.anulado=0 and f.monto<>0 and h.co_cli=i.co_cli
       order by
         f.fec_cob asc
       ";
