@@ -638,7 +638,10 @@ CREATE TABLE `reng_cob`
 	KEY `cobnum`(`cob_num`),
 	KEY `doc_num`(`doc_num`),
 	KEY `itp_doc_co`(`tp_doc_cob`),
-	KEY `rengnum`(`reng_num`)
+	KEY `rengnum`(`reng_num`),
+	CONSTRAINT `reng_cob_FK_1`
+		FOREIGN KEY (`doc_num`)
+		REFERENCES `docum_cc` (`nro_doc`)
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
@@ -654,7 +657,7 @@ CREATE TABLE `cobros`
 	`recibo` CHAR(15) default ' ' NOT NULL,
 	`co_cli` CHAR(10) default ' ' NOT NULL,
 	`co_ven` CHAR(6) default ' ' NOT NULL,
-	`fec_cob` VARCHAR(255)  NOT NULL,
+	`fec_cob` DATE  NOT NULL,
 	`anulado` TINYINT default 0 NOT NULL,
 	`monto` DECIMAL(20,2) default 0 NOT NULL,
 	`dppago` DECIMAL(20,2) default 0 NOT NULL,
@@ -707,16 +710,19 @@ CREATE TABLE `cobros`
 	KEY `imoneda`(`moneda`),
 	KEY `IX_cobros`(`num_turno`),
 	CONSTRAINT `cobros_FK_1`
+		FOREIGN KEY (`cob_num`)
+		REFERENCES `reng_cob` (`cob_num`),
+	CONSTRAINT `cobros_FK_2`
 		FOREIGN KEY (`co_cli`)
 		REFERENCES `clientes` (`co_cli`),
-	CONSTRAINT `cobros_FK_2`
+	CONSTRAINT `cobros_FK_3`
 		FOREIGN KEY (`co_ven`)
 		REFERENCES `vendedor` (`co_ven`),
-	CONSTRAINT `cobros_FK_3`
+	CONSTRAINT `cobros_FK_4`
 		FOREIGN KEY (`moneda`)
 		REFERENCES `moneda` (`co_mone`),
-	INDEX `cobros_FI_4` (`co_sucu`),
-	CONSTRAINT `cobros_FK_4`
+	INDEX `cobros_FI_5` (`co_sucu`),
+	CONSTRAINT `cobros_FK_5`
 		FOREIGN KEY (`co_sucu`)
 		REFERENCES `almacen` (`co_alma`)
 )Type=InnoDB;

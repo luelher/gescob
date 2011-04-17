@@ -4,6 +4,36 @@
 SET FOREIGN_KEY_CHECKS = 0;
 
 #-----------------------------------------------------------------------------
+#-- opciones
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `opciones`;
+
+
+CREATE TABLE `opciones`
+(
+	`mensaje` VARCHAR(500)  NOT NULL,
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (`id`)
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
+#-- cartas
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `cartas`;
+
+
+CREATE TABLE `cartas`
+(
+	`co_zon` VARCHAR(20)  NOT NULL,
+	`co_cli` VARCHAR(20)  NOT NULL,
+	`entregado` DATETIME default '0000-00-00 00:00:00' NOT NULL,
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (`id`)
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- inbox
 #-----------------------------------------------------------------------------
 

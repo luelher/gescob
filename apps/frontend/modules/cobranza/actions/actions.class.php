@@ -100,7 +100,7 @@ class cobranzaActions extends sfActions
 
   }
 
-  public function configGridFrecuencia($desde, $hasta, $fhasta)
+  public function configGridFrecuencia($desde, $hasta, $fhasta, $cedula)
   {
     if(!$fhasta) $fhasta = date('d/m/Y');
     $fechah = explode('/', $fhasta);
@@ -108,6 +108,9 @@ class cobranzaActions extends sfActions
 
     if($desde==0 && $hasta==0) $top = 'top 0';
     else $top='';
+
+    if($cedula!="") $where = "g.cocli='$cedula'";
+    else $where = "g.dias >= $desde and g.dias <= $hasta";
 
     $sql = "
         select $top '1' as id, '0' as enviar, '' as xxx, g.*
@@ -126,7 +129,7 @@ class cobranzaActions extends sfActions
             from
               clientes i
           ) g
-        where g.dias >= $desde and g.dias <= $hasta
+        where $where
         order by
             g.dias desc
       ";
@@ -179,7 +182,9 @@ class cobranzaActions extends sfActions
 
     $fecha = $request->getParameter('fecha_hasta');
 
-    $this->configGridFrecuencia($desde, $hasta, $fecha);
+    $cedula = $request->getParameter('cedula', '');
+
+    $this->configGridFrecuencia($desde, $hasta, $fecha, $cedula);
 
   }
 
