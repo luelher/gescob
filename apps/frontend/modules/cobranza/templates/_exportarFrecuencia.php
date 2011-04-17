@@ -1,4 +1,4 @@
-<?php echo form_tag('cobranza/exportar') ?>
+<?php echo form_tag('cobranza/exportarFrecuencia') ?>
 
 <?php echo $detallecobros ?>
 <br>
