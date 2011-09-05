@@ -43,7 +43,7 @@ class pagosActions extends sfActions
         i.co_cli as cocli,
         (SELECT CONVERT(VARCHAR(10), h.fec_venc, 103) AS [DD/MM/YYYY]) as fecvenc,
         (SELECT CONVERT(VARCHAR(10), f.fec_cob, 103) AS [DD/MM/YYYY]) as feccob,
-        (select CONVERT(VARCHAR,g.neto,1)) as monto,
+        (select CONVERT(VARCHAR,(CASE WHEN g.neto = 0.00 then g.mont_cob else g.neto end),1)) as monto,
         COALESCE((
           select
           DATEDIFF(DAY,
@@ -58,7 +58,7 @@ class pagosActions extends sfActions
       order by
         f.fec_cob asc, i.co_cli
       ";
-
+//print '<pre>'; print $sql;
     H::BuscarDatos(CobrosPeer::DATABASE_NAME, $sql, $reg);
 
     $this->desde = $desde;
