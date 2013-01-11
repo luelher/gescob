@@ -17,6 +17,8 @@ class mantenimientoActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    
+    $c = new Criteria();
+    $c->add(OutboxPeer::PROCESSED,false);
+    $this->contador=OutboxPeer::doCount($c);
   }
 }

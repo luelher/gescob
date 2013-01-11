@@ -51,5 +51,11 @@ opciones:                  # Opciones generales
   nombrecampo:             telefono
   html:                    [size="12" readonly=true ]
   esgrabable:              true
+9:       # Columna 8
+  titulo:                  Vendedor
+  tipo:                    t
+  nombrecampo:             nomven
+  html:                    [size="12" readonly=true ]
+  esgrabable:              true
 
 

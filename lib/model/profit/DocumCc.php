@@ -75,4 +75,13 @@ class DocumCc extends BaseDocumCc
     return parent::getFecVenc('d-m-Y');
   }
 
+  public function getNomven()
+  {
+    $vendedor = $this->getVendedor();
+    if($vendedor) return $vendedor->getVenDes();
+    else return C::VACIO;
+
+  }
+
+
 }

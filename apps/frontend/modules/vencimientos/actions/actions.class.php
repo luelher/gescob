@@ -41,7 +41,7 @@ class vencimientosActions extends sfActions
     //$c->setLimit(20);
 
     //$reg = ClientesPeer::doSelect($c);
-    $reg = DocumCcPeer::doSelectJoinClientes($c);
+    $reg = DocumCcPeer::doSelectJoinClienteVendedor($c);
     $regaux = array();
     foreach ($reg as $i => $cli){
       $c = new Criteria();
@@ -101,6 +101,7 @@ class vencimientosActions extends sfActions
 <td>Monto</td>
 <td>Observación</td>
 <td>Nro. Contacto</td>
+<td>Vendedor</td>
 </tr>");
 
     foreach($grid as $g)
@@ -114,6 +115,7 @@ class vencimientosActions extends sfActions
 <td>".$g[4]."</td>
 <td>".$g[5]."</td>
 <td>".($g[6]!='' ? $g[6] : $g[7])."</td>
+<td>".$g[8]."</td>
 </tr>");
         $enviados++;
       }else $fallidos++;
