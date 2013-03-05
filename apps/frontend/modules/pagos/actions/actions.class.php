@@ -47,7 +47,7 @@ class pagosActions extends sfActions
         COALESCE((
           select
           DATEDIFF(DAY,
-          (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and (zz.tipo_doc='GIRO' OR zz.tipo_doc='ADEL') and zz.nro_orig=h.nro_orig and xx.cob_num <> f.cob_num order by	fec_cob desc) a order by a.fec_cob asc),
+          (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and (zz.tipo_doc='GIRO' OR zz.tipo_doc='ADEL') and zz.nro_orig=h.nro_orig and xx.cob_num <> f.cob_num order by	fec_cob desc) a order by a.fec_cob desc),
           (select top 1 a.fec_cob as ultimo from (select top (2) xx.fec_cob from cobros xx inner join (reng_cob yy inner join docum_cc zz on yy.doc_num=zz.nro_doc) on xx.cob_num=yy.cob_num   where xx.co_cli=f.co_cli and (zz.tipo_doc='GIRO' OR zz.tipo_doc='ADEL') and zz.nro_orig=h.nro_orig order by	fec_cob desc) a))
         ),0) as diasmora,
         h.observa
