@@ -79,17 +79,22 @@ class cobranzaActions extends sfActions
     $c->add(CartasPeer::ENTREGADO ,CartasPeer::ENTREGADO." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
     $c->add(CartasPeer::CO_CLI,CartasPeer::ENTREGADO." <= '$fhasta[2]-$fhasta[1]-$fhasta[0]'",Criteria::CUSTOM);
     $c->add(CartasPeer::CO_ZON,$zona);
-    $c->addAscendingOrderByColumn(CartasPeer::ENTREGADO);
+    $c->setDistinct();
+    $c->addAscendingOrderByColumn(CartasPeer::CO_CLI);
 
     //$c->setLimit(20);
 
     //$reg = ClientesPeer::doSelect($c);
     $reg = CartasPeer::doSelect($c);
+    foreach ($reg as $r) {
+      $r->setPagoDesde($desde);
+      $r->setPagoHasta($hasta);
+    }
 
     //$this->obj = H::getConfigGrid("grid_documcc",$reg);
     $this->desde = $desde;
  
-   $this->hasta = $hasta;
+    $this->hasta = $hasta;
 
 
     $this->buscarcobros = new buscarCartasForm(array('fecha_desde' => $desde, 'fecha_hasta' => $hasta));
@@ -230,8 +235,9 @@ class cobranzaActions extends sfActions
 <td>Cedula Cliente</td>
 <td>Nombre Cliente</td>
 <td>Fecha Entrega</td>
-<td>Fecha Pago</td>
+<td>Fecha Ult. Pago</td>
 <td>Cancelado</td>
+<td>Cantidad Pagos</td>
 </tr>");
 
     foreach($grid as $g)
@@ -245,6 +251,7 @@ class cobranzaActions extends sfActions
 <td>".$g[4]."</td>
 <td>".$g[5]."</td>
 <td>".$g[6]."</td>
+<td>".$g[7]."</td>
 </tr>");
         $enviados++;
       }else $fallidos++;

@@ -8,7 +8,7 @@ class ZonaPeer extends BaseZonaPeer
     $result = array();
     if($blank) $result[''] = '';
     foreach ($zonas as $z){
-      $result[$z->getCoZon()] = $z->getZonDes();
+      $result[trim($z->getCoZon())] = $z->getZonDes();
     }
     return $result;
   }

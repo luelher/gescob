@@ -48,11 +48,11 @@ class cartasActions extends sfActions
       }else{
         $c = new Criteria();
         $c->add(CartasPeer::CO_CLI,$this->cedula);
-        $c->add(CartasPeer::ENTREGADO,$fecha[2]-$fecha[1]-$fecha[0]);
+        $c->add(CartasPeer::ENTREGADO,"MONTH(entregado) = ".$fecha[1]."",Criteria::CUSTOM);
 
-        $carta = CartasPeer::doSelectOne($c);
+        $carta = CartasPeer::doSelectOne($c); 
         if($carta) {
-          $this->mensaje='ERROR: Carta ya entregada al cliente ('.$this->cedula.') para la fecha ('.$this->fecha_entrega.')';
+          $this->mensaje='ERROR: Carta ya entregada al cliente ('.$this->cedula.') para la fecha ('.$carta->getEntregado().')';
           $this->error = true;
         }else{
           $carta = new Cartas();

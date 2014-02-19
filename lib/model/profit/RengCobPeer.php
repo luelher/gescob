@@ -36,7 +36,7 @@ class RengCobPeer extends BaseRengCobPeer
     $c->addDescendingOrderByColumn(CobrosPeer::FEC_COB);
     $result = RengCobPeer::doSelect($c);
 
-    if($result) return $result[0];
+    if($result) return $result;
     else return null;
 
   }

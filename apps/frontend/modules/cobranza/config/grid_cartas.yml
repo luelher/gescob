@@ -35,7 +35,7 @@ opciones:                  # Opciones generales
   nombrecampo:             entregado
   html:                    [size="7" readonly=true ]
 6:
-  titulo:                  Fecha Pago
+  titulo:                  Fecha Ult. Pago
   tipo:                    t
   nombrecampo:             fec_pago
   html:                    [size="10" readonly=true ]
@@ -45,5 +45,10 @@ opciones:                  # Opciones generales
   nombrecampo:             can_pago
   html:                    [size="10" readonly=true ]
   estotal:                 [true, totalp]
+8:
+  titulo:                  Cantidad Pagos
+  tipo:                    m
+  nombrecampo:             conta_pagos
+  html:                    [size="10" readonly=true ]
 
 
