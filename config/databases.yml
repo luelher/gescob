@@ -18,16 +18,16 @@ all:
     param:
       phptype:   mssql
       classname: MssqlPropelPDO
-      dsn:       dblib:host=10.10.2.4;dbname=RECADMAR
+      dsn:       dblib:host=SERVER01\SERVER;dbname=RECADMAR
       username:  gescob
-      password:  797965
+      password:  "797965"
       encoding:  
       pooling:   true
   sms:
     class: sfPropelDatabase
     param:
-      dsn:      mysql:host=localhost;dbname=sms
+      dsn:      mysql:host=localhost;dbname=arv2_production
       username: root
-      password: 123456
+      password: "123456"
       encoding:
       pooling:  true

@@ -21,6 +21,12 @@ class detalleMorososForm extends sfForm {
           $cantcli++;
           $cocliant=$cocli;
         }
+      }else{
+        $cocli = $p->getCoCli();
+        if($cocliant!=$cocli){
+          $cantcli++;
+          $cocliant=$cocli;
+        }
       }
     }
     
