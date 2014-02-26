@@ -48,7 +48,7 @@ class cartasActions extends sfActions
       }else{
         $c = new Criteria();
         $c->add(CartasPeer::CO_CLI,$this->cedula);
-        $c->add(CartasPeer::ENTREGADO,"MONTH(entregado) = ".$fecha[1]."",Criteria::CUSTOM);
+        $c->add(CartasPeer::ENTREGADO,"MONTH(entregado) = ".$fecha[1]." AND  YEAR(entregado) = ".$fecha[2],Criteria::CUSTOM);
 
         $carta = CartasPeer::doSelectOne($c); 
         if($carta) {
