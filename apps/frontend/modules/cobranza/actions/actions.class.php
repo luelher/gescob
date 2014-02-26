@@ -77,7 +77,7 @@ class cobranzaActions extends sfActions
 
     $c = new Criteria();
     $c->add(CartasPeer::ENTREGADO ,CartasPeer::ENTREGADO." >= '$fdesde[2]-$fdesde[1]-$fdesde[0]'",Criteria::CUSTOM);
-    $c->add(CartasPeer::CO_CLI,CartasPeer::ENTREGADO." <= '$fhasta[2]-$fhasta[1]-$fhasta[0]' AND cartas.co_cli = '2504240'",Criteria::CUSTOM);
+    $c->add(CartasPeer::CO_CLI,CartasPeer::ENTREGADO." <= '$fhasta[2]-$fhasta[1]-$fhasta[0]'",Criteria::CUSTOM);
     $c->add(CartasPeer::CO_ZON,$zona);
     $c->setDistinct();
     $c->addAscendingOrderByColumn(CartasPeer::CO_CLI);
