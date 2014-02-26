@@ -84,13 +84,13 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     net_ult_ve:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     mont_cre:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -100,7 +100,7 @@ profit:
       required: true
       default: 0
     desc_ppago:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -133,7 +133,7 @@ profit:
       onDelete:
       onUpdate:
     desc_glob:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -187,7 +187,7 @@ profit:
       required: true
       default: " "
     iva:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -464,7 +464,7 @@ profit:
       required: true
       default: " "
     saldo:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -519,25 +519,25 @@ profit:
       onDelete:
       onUpdate:
     tot_bruto:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     tot_neto:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     glob_desc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     tot_reca:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -553,31 +553,31 @@ profit:
       required: true
       default: " "
     total_uc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     total_cp:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     tot_flete:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     monto_dev:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     totklu:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -591,13 +591,13 @@ profit:
       required: true
       default: 0
     iva:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     iva_dev:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -611,7 +611,7 @@ profit:
       required: true
       default: 0
     tasa:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -622,7 +622,7 @@ profit:
       required: true
       default: " "
     vuelto:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -632,19 +632,19 @@ profit:
       required: true
       default: 0
     tasag:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     tasag10:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     tasag20:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -794,7 +794,7 @@ profit:
       required: true
       default: " "
     uni_relac:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -804,43 +804,43 @@ profit:
       required: true
       default: 0
     stock_act:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     stock_com:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     sstock_com:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     stock_lle:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     sstock_lle:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     stock_des:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     sstock_des:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -860,43 +860,43 @@ profit:
       required: true
       default: " "
     suni_relac:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 3
       required: true
       default: 0
     sstock_act:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     relac_comp:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     relac_vent:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     pto_pedido:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     stock_max:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     stock_min:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -906,7 +906,7 @@ profit:
       required: true
       default: 0
     prec_vta1:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -920,7 +920,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     prec_vta2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -930,7 +930,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     prec_vta3:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -940,7 +940,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     prec_vta4:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -950,43 +950,43 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     prec_vta5:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     prec_agr1:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     prec_agr2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     prec_agr3:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     prec_agr4:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     prec_agr5:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     can_agr:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1005,13 +1005,13 @@ profit:
       required: true
       default: " "
     margen_max:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     ult_cos_un:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1021,7 +1021,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_pro_un:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1031,7 +1031,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_merc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1041,7 +1041,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_prov:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1051,7 +1051,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     ult_cos_do:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1061,7 +1061,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_un_an:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1071,7 +1071,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     ult_cos_om:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1081,7 +1081,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_pro_om:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1096,31 +1096,31 @@ profit:
       required: true
       default: " "
     mont_comi:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     porc_cos:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     mont_cos:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     porc_gas:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     mont_gas:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -1134,13 +1134,13 @@ profit:
       required: true
       default: 0
     punt_cli:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     punt_pro:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -1178,19 +1178,19 @@ profit:
       required: true
       default: " "
     mon_ilc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     capacidad:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 3
       required: true
       default: 0
     grado_al:
-      type: DECIMAL
+      type: FLOAT
       size: 12
       scale: 2
       required: true
@@ -1302,19 +1302,19 @@ profit:
       required: true
       default: " "
     equi_uni1:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 1
     equi_uni2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 1
     equi_uni3:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1392,43 +1392,43 @@ profit:
       required: true
       default: " "
     peso:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     pie:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     margen1:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     margen2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     margen3:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     margen4:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     margen5:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -1457,7 +1457,7 @@ profit:
       required: true
       default: " "
     rel_emp:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1542,19 +1542,19 @@ profit:
       onDelete:
       onUpdate:
     total_art:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     stotal_art:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     pendiente:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1565,7 +1565,7 @@ profit:
       required: true
       default: " "
     prec_vta:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1585,55 +1585,55 @@ profit:
       onDelete:
       onUpdate:
     isv:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     reng_neto:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     cos_pro_un:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     ult_cos_un:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     ult_cos_om:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     cos_pro_om:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     total_dev:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     monto_dev:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     prec_vta2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1652,7 +1652,7 @@ profit:
       required: true
       default: 0
     cant_imp:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1668,19 +1668,19 @@ profit:
       required: true
       default: (newid())
     total_uni:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 1
     mon_ilc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     otros:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1695,7 +1695,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     pendiente2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1724,7 +1724,7 @@ profit:
       required: true
       default: " "
     aux01:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1735,13 +1735,13 @@ profit:
       required: true
       default: " "
     cant_prod:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     imp_prod:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1850,7 +1850,7 @@ profit:
       onDelete:
       onUpdate:
     tasa:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -1865,31 +1865,31 @@ profit:
       onDelete:
       onUpdate:
     monto_imp:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     monto_gen:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     monto_a1:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     monto_a2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     monto_bru:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -1900,7 +1900,7 @@ profit:
       required: true
       default: " "
     monto_des:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -1911,25 +1911,25 @@ profit:
       required: true
       default: " "
     monto_rec:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     monto_otr:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     monto_net:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     saldo:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -1948,31 +1948,31 @@ profit:
       required: true
       default: " "
     comis1:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comis2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comis3:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comis4:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     adicional:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2077,25 +2077,25 @@ profit:
       required: true
       default: (newid())
     mon_ilc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     otros1:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     otros2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     otros3:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -2105,13 +2105,13 @@ profit:
       required: true
       default: 0
     comis5:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comis6:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2120,7 +2120,7 @@ profit:
       type: BINARY
       required: true
     aux01:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -2195,19 +2195,19 @@ profit:
       onDelete:
       onUpdate:
     neto:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     neto_tmp:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     dppago:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2226,25 +2226,25 @@ profit:
       required: true
       default: " "
     comis1:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comis2:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comis3:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comis4:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2255,25 +2255,25 @@ profit:
       required: true
       default: " "
     porc_aju_c:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     por_cob:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comi_cob:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     mont_cob:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2287,31 +2287,31 @@ profit:
       required: true
       default: 0
     monto_dppago:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     monto_reten:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
       default: 0
     imp_pago:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     monto_obj:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     isv:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2327,7 +2327,7 @@ profit:
       required: true
       default: " "
     tasa:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -2338,7 +2338,7 @@ profit:
       required: true
       default: " "
     sustraen:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2362,13 +2362,13 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     comis5:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     comis6:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2378,25 +2378,25 @@ profit:
       required: true
       default: 0
     ret_iva:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     porc_retn:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 8
       required: true
       default: 0
     porc_desc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 8
       required: true
       default: 0
     aux01:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -2461,19 +2461,19 @@ profit:
       required: true
       default: 0
     monto:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     dppago:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     mont_ncr:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2483,25 +2483,25 @@ profit:
       required: true
       default: 0
     tcomi_porc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     tcomi_line:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     tcomi_art:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     tcomi_conc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -2511,7 +2511,7 @@ profit:
       required: true
       #default: ('01/01/1900')
     tasa:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -2654,7 +2654,7 @@ profit:
       required: true
       default: 0
     aux01:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -2714,13 +2714,13 @@ profit:
       required: true
       default: " "
     mont_doc:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     mont_tmp:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -3132,7 +3132,7 @@ profit:
       required: true
       default: 0
     comision:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -3151,7 +3151,7 @@ profit:
       required: true
       default: 0
     comisionv:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -3165,7 +3165,7 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     net_ult_ve:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -3612,7 +3612,7 @@ profit:
       required: true
       default: " "
     cambio:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 5
       required: true
@@ -4509,7 +4509,7 @@ profit:
       required: true
       default: " "
     comi_lin:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -5035,25 +5035,25 @@ profit:
       required: true
       #default: (convert(varchar(10),getdate(),104))
     net_ult_co:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     saldo:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     saldo_ini:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     mont_cre:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -5063,13 +5063,13 @@ profit:
       required: true
       default: 0
     desc_ppago:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
       default: 0
     desc_glob:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -5080,7 +5080,7 @@ profit:
       required: true
       default: " "
     iva:
-      type: DECIMAL
+      type: FLOAT
       size: 20
       scale: 2
       required: true
@@ -5391,25 +5391,25 @@ profit:
       required: true
       default: " "
     porc_vent:
-      type: DECIMAL
+      type: FLOAT
       size: 12
       scale: 3
       required: true
       default: 0
     porc_comp:
-      type: DECIMAL
+      type: FLOAT
       size: 12
       scale: 3
       required: true
       default: 0
     porc_cxs:
-      type: DECIMAL
+      type: FLOAT
       size: 12
       scale: 3
       required: true
       default: 0
     porc_otro:
-      type: DECIMAL
+      type: FLOAT
       size: 12
       scale: 3
       required: true

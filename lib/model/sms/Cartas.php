@@ -65,9 +65,9 @@ class Cartas extends BaseCartas
     $total_cobros = 0.0;
     if($this->pago) {
       foreach ($this->pago as $pago) {
-        $cobro = $pago->getCobros();
-        if($cobro) $total_cobros += $cobro->getMonto();
+        $total_cobros +=  $pago->getMontCob();
       }
+      
       if($total_cobros > 0.0) return $total_cobros;
       else return 'Sin Cancelar';
     }else return 'Sin Cancelar';
